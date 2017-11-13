@@ -1,5 +1,6 @@
 package org.fom.proyecto1;
 //FALTAN LOS NOMBRES DE LAS ACTIVIDADSE CORRECTOS
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

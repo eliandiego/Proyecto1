@@ -12,5 +12,4 @@
         <target android:excludeId="@android:id/navigationBarBackground" />
         <target android:excludeId="@id/detail_toolbar" />
     </targets>
-
 </transitionSet>
