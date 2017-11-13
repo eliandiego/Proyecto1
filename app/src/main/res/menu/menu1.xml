@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <!-- MENU -->
+
+    <item android:id="@+id/action_perfiles"
+        android:title="Servicios de formadores"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_demandas"
+        android:title="Ver demandas"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"/>
+    <item android:id="@+id/action_perfil"
+        android:title="Gestionar perfil"
+        android:icon="@android:drawable/ic_menu_today"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="Modificar cuenta"
+        android:icon="@android:drawable/ic_menu_preferences"
+        app:showAsAction="never"/>
+    <item android:id="@+id/action_salir"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:title="Salir"
+        app:showAsAction="ifRoom" />
+</menu>
+
