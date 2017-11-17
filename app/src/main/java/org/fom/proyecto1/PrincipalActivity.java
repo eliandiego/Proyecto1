@@ -51,9 +51,9 @@ public class PrincipalActivity extends AppCompatActivity
                  startActivity(i);*/
                 return true;
             case R.id.action_perfil:
-                Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
-                 /* Intent i = new Intent(this, demandasActivity.class);
-                 startActivity(i);*/
+               // Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
+                 Intent i = new Intent(this, Demandas.class);
+                 startActivity(i);
                 return true;
             case R.id.action_salir:
                 finish();
