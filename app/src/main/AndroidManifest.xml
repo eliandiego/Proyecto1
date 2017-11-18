@@ -32,5 +32,11 @@
             android:label="Demanda de servicio"/>
         <activity android:name=".PagoServicio"
             android:label="Demanda de servicio"/>
+        <activity android:name=".Demandas"
+            android:label="Demanda de servicio"/>
+        <activity android:name=".DemandaServicios"
+            android:label="Demanda de servicio"/>
+        <activity android:name=".Perfil"
+            android:label="Demanda de servicio"/>
    </application>
 </manifest>
