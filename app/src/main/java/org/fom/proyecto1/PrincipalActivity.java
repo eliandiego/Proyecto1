@@ -44,8 +44,8 @@ public class PrincipalActivity extends AppCompatActivity
         switch (item.getItemId()) {
             case R.id.action_perfiles:
               //  Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
-                /*Intent i = new Intent(this, serviciosActivity.class);
-                startActivity(i);*/
+               Intent i = new Intent(this, ListadoPerfilesActivity.class);
+                startActivity(i);
 
                 return true;
 
@@ -87,8 +87,8 @@ public class PrincipalActivity extends AppCompatActivity
 
             case R.id.action_settings:
                 //Toast.makeText(this, "Registro de Datos Personales ", Toast.LENGTH_SHORT).show();
-                 Intent i = new Intent(this, RegistroDatosPersonales.class);
-                 startActivity(i);
+                 Intent inte = new Intent(this, RegistroDatosPersonales.class);
+                 startActivity(inte);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
