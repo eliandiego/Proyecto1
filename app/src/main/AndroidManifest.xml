@@ -32,6 +32,9 @@
         <activity android:name="org.fom.proyecto1.LoginActivity"
             android:theme="@style/temasinactionbar">
         </activity>
+        <activity android:name=".DetalleUsuarioActivity" />
+        <activity android:name=".ListadoPerfilesActivity" />
+        <activity android:name=".RespuestaActivity" />
         <!--otras-->
     </application>
 
