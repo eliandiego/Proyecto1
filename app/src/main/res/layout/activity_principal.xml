@@ -87,7 +87,7 @@
 
             android:onClick="lanzarDemandas"
             android:paddingLeft="20dp"
-            android:text="Crear demandas"
+            android:text="@string/btncreardemandas"
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:textColor="@android:color/background_dark"

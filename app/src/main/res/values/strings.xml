@@ -12,6 +12,10 @@
     <string name="contraseña">Contraseña</string>
     <string name="rellenatodos">Rellena todos los campos</string>
     <string name="logo">logo</string>
+    <!--LAYOUT MENU1-->
+    <string name="gestionarmicuenta">Gestionar mi cuenta</string>
+    <string name="salir">Salir</string>
+
      <!--LAYOUT LOGIN-->
     <string name="titlogin">!Bienvenid@ a AppFormaT: la formación a tu alcance¡</string>
     <string name="btnmostrarcontraseña">Mostrar contraseña</string>
@@ -21,7 +25,9 @@
     <!--LAYOUT PRINCIPAL-->
     <string name="btnservicios">Servicios de formadores</string>
     <string name="btndemandas">Ver demandas</string>
+    <string name="btncreardemandas">Crear demanda</string>
     <string name="btnperfil">Gestionar perfil</string>
+    Gestionar datos personale
     <!--LAYOUT DATOS BASICOS-->
      <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>

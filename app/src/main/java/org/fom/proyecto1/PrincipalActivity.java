@@ -1,7 +1,6 @@
 package org.fom.proyecto1;
 //PANTALLA DE ENTRADA
 //FAlta buscar iconos personalizados o fotos
-// FALTAN LOS NOMBRES DE LAS ACTIVIDADSE CORRECTOS
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -87,9 +86,9 @@ public class PrincipalActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_settings:
-               // Toast.makeText(this, "Datos de usuario ", Toast.LENGTH_SHORT).show();
-                 /* Intent i = new Intent(this, perfilActivity.class);
-                 startActivity(i);*/
+                //Toast.makeText(this, "Registro de Datos Personales ", Toast.LENGTH_SHORT).show();
+                 Intent i = new Intent(this, RegistroDatosPersonales.class);
+                 startActivity(i);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
