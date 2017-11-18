@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">AppServicios</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">E-mail</string>
+    <string name="telefono">Teléfono</string>
+    <string name="localidad">Localidad</string>
+    <string name="guardar">Guardar</string>
+    <string name="tit_registro_datos">"UsuarioX"</string>
+    <string name="err_campo_vacio">Este campo es obligatorio</string>
+    <string name="datos_guardados">Datos guardados correctamente</string>
+    <string name="tit_envio_respuesta">Envío de respuesta personal</string>
+    <string name="escriberespuesta">Mensaje</string>
+    <string name="enviar">Enviar respuesta</string>
+    <string name="respuesta_enviada">Respuesta enviada</string>
 
 </resources>
