@@ -3,11 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorAccent"
     android:layout_height="match_parent">
 
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
@@ -72,7 +73,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="FORMULARIO DE PERFIL"
+        android:text="COMPLETAR:"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="16dp" />
 
@@ -83,7 +84,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView"
-        android:text="Materia:"
+        android:text="Materia a dictar:"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="67dp" />
 
@@ -95,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/radioButton9"
-        android:text="Horario:"
+        android:text="Horario disponible:"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="120dp" />
 
@@ -114,7 +115,7 @@
         android:layout_above="@+id/editText3"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="14dp"
-        android:text="Precio:"
+        android:text="Precio por hora:"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="167dp" />
 
@@ -152,7 +153,7 @@
         android:layout_alignBottom="@+id/editText4"
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="46dp"
-        android:text="Crear Perfil" />
+        android:text="Guardar" />
 
 
 </RelativeLayout>
