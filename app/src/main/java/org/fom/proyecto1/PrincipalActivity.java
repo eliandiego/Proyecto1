@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 public class PrincipalActivity extends AppCompatActivity
 {
+
+    public static AlmacenDemandas almacen= new AlmacenDemandasArray();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,17 +47,36 @@ public class PrincipalActivity extends AppCompatActivity
               //  Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
                 /*Intent i = new Intent(this, serviciosActivity.class);
                 startActivity(i);*/
+
                 return true;
 
+            case R.id.crear_demandas:
+                // Toast.makeText(this, "Ver lista_demandas ", Toast.LENGTH_SHORT).show();
+                Intent iii = new Intent(this, DemandaServicios.class);
+                startActivity(iii);
+                return true;
+
+
             case R.id.action_demandas:
+
                 //Toast.makeText(this, "Ver demandas ", Toast.LENGTH_SHORT).show();
                  /* Intent i = new Intent(this, datosusuarioActivity.class);
                  startActivity(i);*/
+               // Toast.makeText(this, "Ver lista_demandas ", Toast.LENGTH_SHORT).show();
+                 Intent iiiii = new Intent(this, Demandas.class);
+                 startActivity(iiiii);
                 return true;
+
             case R.id.action_perfil:
+
              //   Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
                  /* Intent i = new Intent(this, demandasActivity.class);
                  startActivity(i);*/
+
+               // Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
+                 Intent ii = new Intent(this, Perfil.class);
+                 startActivity(ii);
+
                 return true;
             case R.id.action_salir:
                 finish();
@@ -79,15 +101,37 @@ public class PrincipalActivity extends AppCompatActivity
         Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
     }
     public void lanzarServicios(View view) {
-        /*Intent i = new Intent(this, serviciosActivity.class);
+
+        Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
+
+         /*Intent i = new Intent(this, serviciosActivity.class);
         startActivity(i);*/
     }
     public void lanzarDemandas(View view) {
-        /* Intent i = new Intent(this, demandasActivity.class);
-        startActivity(i);*/
+        //Toast.makeText(this, "Ver lista_demandas ", Toast.LENGTH_SHORT).show();
+        Intent i = new Intent(this, DemandaServicios.class);
+        startActivity(i);
+
     }
     public void lanzarPerfil(View view) {
-        /* Intent i = new Intent(this, perfilActivity.class);
+        //Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
+        Intent ii = new Intent(this, Perfil.class);
+        startActivity(ii);
+       /* Intent i = new Intent(this, perfilActivity.class);
         startActivity(i);*/
     }
+
+    public void lanzarPuntuaciones(View view) {
+        Intent i = new Intent(this, Demandas.class);
+        startActivity(i);
+
+
+    }
+
+
+
+
+
+
+
 }//fin clase
