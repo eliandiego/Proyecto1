@@ -28,9 +28,7 @@
         <activity android:name=".DemandaServicios"/>
         <activity android:name=".Perfil"/>
         <activity android:name=".Demandas"/>
-        <activity android:name="org.fom.proyecto1.PrincipalActivity"
-            android:theme="@style/temasinactionbar">
-        </activity>
+
         <activity android:name="org.fom.proyecto1.LoginActivity"
             android:theme="@style/temasinactionbar">
         </activity>
