@@ -12,10 +12,10 @@
     
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView2m"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView"
+        android:layout_below="@+id/textView"
         android:text="Materia Requerida:"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="67dp" />
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/textView2m"
         android:layout_marginTop="16dp"
         android:text="Inglés" />
 

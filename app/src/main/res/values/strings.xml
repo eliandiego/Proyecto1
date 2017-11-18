@@ -23,6 +23,7 @@
     <string name="btndemandas">Ver demandas</string>
     <string name="btnperfil">Gestionar perfil</string>
     <!--LAYOUT DATOS BASICOS-->
+    <string name="datos_personales">Datos personales</string>
      <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="email">E-mail</string>
@@ -36,4 +37,17 @@
     <string name="escriberespuesta">Mensaje</string>
     <string name="enviar">Enviar respuesta</string>
     <string name="respuesta_enviada">Respuesta enviada</string>
+    <!--LAYOUT REALIZACION PAGO-->
+    <string name="realizacion_pago">Realización de pago</string>
+    <string name="concepto">Concepto</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor nibh, fringilla sit amet elit ac, tincidunt posuere nibh.</string>
+    <string name="detalle_servicio">Detalle del servicio prestado:</string>
+    <string name="precio_hora">Precio por hora</string>
+    <string name="d_precio_hora">€30 / hora</string>
+    <string name="tiempo">Horas prestadas</string>
+    <string name="horas">3</string>
+    <string name="total">Total a pagar</string>
+    <string name="d_total">€90</string>
+    <string name="pago_realizado">Pago realizado correctamente</string>
+    <string name="usuariox">Usuario X</string>
 </resources>

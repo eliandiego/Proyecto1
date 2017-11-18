@@ -66,8 +66,8 @@ public class PrincipalActivity extends AppCompatActivity
 
             case R.id.action_settings:
                // Toast.makeText(this, "Datos de usuario ", Toast.LENGTH_SHORT).show();
-                 /* Intent i = new Intent(this, perfilActivity.class);
-                 startActivity(i);*/
+                 Intent i = new Intent(this, RegistroDatosPersonales.class);
+                 startActivity(i);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

@@ -20,11 +20,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistroDatosPersonales"
-            android:label="Datos personales"/>
+            android:label="@string/datos_personales"/>
         <activity android:name=".EnvioRespuestaPersonal"
             android:label="Demanda de servicio"/>
         <activity android:name=".PagoServicio"
-            android:label="Demanda de servicio"/>
+            android:label="@string/realizacion_pago"/>
 
         <activity android:name="org.fom.proyecto1.PrincipalActivity"
             android:theme="@style/temasinactionbar">

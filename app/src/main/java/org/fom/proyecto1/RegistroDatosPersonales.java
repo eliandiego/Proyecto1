@@ -25,11 +25,11 @@ public class RegistroDatosPersonales extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.datos_personales);
 
-        et_nombre= (EditText) findViewById(R.id.nombre);
-        et_apellido= (EditText) findViewById(R.id.apellido);
-        et_email= (EditText) findViewById(R.id.email);
-        et_telefono= (EditText) findViewById(R.id.telefono);
-        et_localidad= (EditText) findViewById(R.id.localidad);
+        et_nombre= findViewById(R.id.nombre);
+        et_apellido=  findViewById(R.id.apellido);
+        et_email=  findViewById(R.id.email);
+        et_telefono=  findViewById(R.id.telefono);
+        et_localidad=  findViewById(R.id.localidad);
 
         //Persistencia de datos (mecanismo de Preferencias) El nombre del fichero es "datos_usuario"
         SharedPreferences prefe=getSharedPreferences("datos_usuario", Context.MODE_PRIVATE);
@@ -71,8 +71,8 @@ public class RegistroDatosPersonales extends AppCompatActivity {
         finish(); //Finaliza la actividad actual
 
         //Pruebas Isabel: Inicia actividad de prueba, para que yo pueda probar mis cambios en el proyecto
-        //Intent i = new Intent(this, PagoServicio.class);
-        //startActivity(i);
+        /*Intent i = new Intent(this, PagoServicio.class);
+        startActivity(i);*/
     }
 
 
