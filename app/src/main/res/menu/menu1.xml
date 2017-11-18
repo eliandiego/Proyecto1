@@ -5,25 +5,35 @@
     tools:context=".MainActivity">
     <!-- MENU -->
     <item android:id="@+id/action_perfiles"
-        android:title="Servicios de formadores"
+        android:title="@string/btnservicios"
         android:icon="@android:drawable/ic_menu_today"
         app:showAsAction="always"/>
+
+    <item android:id="@+id/crear_demandas"
+        android:title="Crear demandas"
+        android:icon="@android:drawable/ic_dialog_dialer"
+        app:showAsAction="always"/>
+
     <item android:id="@+id/action_demandas"
-        android:title="Ver demandas"
+        android:title="@string/btndemandas"
         android:icon="@android:drawable/ic_menu_search"
         app:showAsAction="always"/>
+
+
+
     <item android:id="@+id/action_perfil"
-        android:title="Gestionar perfil"
+        android:title="@string/btnperfil"
         android:icon="@android:drawable/ic_menu_my_calendar"
         app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_settings"
-        android:title="Modificar cuenta"
+        android:title="@string/gestionarmicuenta"
         android:icon="@android:drawable/ic_menu_preferences"
         app:showAsAction="never"/>
+
     <item android:id="@+id/action_salir"
         android:icon="@android:drawable/ic_lock_power_off"
-        android:title="Salir"
+        android:title="@string/salir"
         app:showAsAction="ifRoom" />
 </menu>
 

@@ -1,7 +1,5 @@
 package org.fom.proyecto1;
 //PANTALLA DE ENTRADA
-//FAlta buscar iconos personalizados o fotos
-// FALTAN LOS NOMBRES DE LAS ACTIVIDADSE CORRECTOS
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,22 +12,20 @@ import android.widget.Toast;
 
 public class PrincipalActivity extends AppCompatActivity
 {
+    public static AlmacenDemandas almacen= new AlmacenDemandasArray();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
        // getSupportActionBar().setTitle("title vbar");
-
       /*  toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(PrincipalActivity.this, "Atrás", Toast.LENGTH_SHORT).show();
             }
         });*/
-
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -39,22 +35,27 @@ public class PrincipalActivity extends AppCompatActivity
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i;
         switch (item.getItemId()) {
             case R.id.action_perfiles:
-              //  Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
-                /*Intent i = new Intent(this, serviciosActivity.class);
-                startActivity(i);*/
+                i = new Intent(this, ListadoPerfilesActivity.class);
+                startActivity(i);
+                return true;
+            case R.id.crear_demandas:
+
+                i = new Intent(this, DemandaServicios.class);
+                startActivity(i);
                 return true;
 
             case R.id.action_demandas:
-                //Toast.makeText(this, "Ver demandas ", Toast.LENGTH_SHORT).show();
-                 /* Intent i = new Intent(this, datosusuarioActivity.class);
-                 startActivity(i);*/
+                 i = new Intent(this, Demandas.class);
+                 startActivity(i);
                 return true;
+
             case R.id.action_perfil:
-             //   Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
-                 /* Intent i = new Intent(this, demandasActivity.class);
-                 startActivity(i);*/
+                 i = new Intent(this, Perfil.class);
+                 startActivity(i);
+
                 return true;
             case R.id.action_salir:
                 finish();
@@ -65,29 +66,31 @@ public class PrincipalActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_settings:
-               // Toast.makeText(this, "Datos de usuario ", Toast.LENGTH_SHORT).show();
-                 Intent i = new Intent(this, RegistroDatosPersonales.class);
+                 i = new Intent(this, RegistroDatosPersonales.class);
                  startActivity(i);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
-
-
+    //=========================================================
     private void action(int resid) {
         Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
     }
     public void lanzarServicios(View view) {
-        /*Intent i = new Intent(this, serviciosActivity.class);
-        startActivity(i);*/
+        Intent i = new Intent(this, ListadoPerfilesActivity.class);
+        startActivity(i);
     }
     public void lanzarDemandas(View view) {
-        /* Intent i = new Intent(this, demandasActivity.class);
-        startActivity(i);*/
+        Intent i = new Intent(this, DemandaServicios.class);
+        startActivity(i);
     }
     public void lanzarPerfil(View view) {
-        /* Intent i = new Intent(this, perfilActivity.class);
-        startActivity(i);*/
+        Intent i = new Intent(this, Perfil.class);
+        startActivity(i);
+        }
+    public void lanzarPuntuaciones(View view) {
+        Intent i = new Intent(this, Demandas.class);
+        startActivity(i);
     }
 }//fin clase

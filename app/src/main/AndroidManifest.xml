@@ -19,12 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroDatosPersonales"
-            android:label="@string/datos_personales"/>
-        <activity android:name=".EnvioRespuestaPersonal"
-            android:label="Demanda de servicio"/>
-        <activity android:name=".PagoServicio"
-            android:label="@string/realizacion_pago"/>
+
 
         <activity android:name="org.fom.proyecto1.PrincipalActivity"
             android:theme="@style/temasinactionbar">
@@ -32,6 +27,19 @@
         <activity android:name="org.fom.proyecto1.LoginActivity"
             android:theme="@style/temasinactionbar">
         </activity>
+        <!--tema AppTeme-->
+        <activity android:name=".RegistroDatosPersonales"
+            android:label="@string/datos_personales"/>
+        <activity android:name=".EnvioRespuestaPersonal"
+            android:label="Demanda de servicio"/>
+        <activity android:name=".PagoServicio"
+            android:label="@string/realizacion_pago"/>
+        <activity android:name=".DemandaServicios"/>
+        <activity android:name=".Perfil"/>
+        <activity android:name=".Demandas"/>
+        <activity android:name=".DetalleUsuarioActivity" />
+        <activity android:name=".ListadoPerfilesActivity" />
+        <activity android:name=".RespuestaActivity" />
         <!--otras-->
     </application>
 </manifest>
