@@ -1,6 +1,7 @@
 package org.fom.proyecto1;
-//FALTAN LOS NOMBRES DE LAS ACTIVIDADSE CORRECTOS
-
+//PANTALLA DE ENTRADA
+//FAlta buscar iconos personalizados o fotos
+// FALTAN LOS NOMBRES DE LAS ACTIVIDADSE CORRECTOS
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -40,20 +41,20 @@ public class PrincipalActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_perfiles:
-                Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
+              //  Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
                 /*Intent i = new Intent(this, serviciosActivity.class);
                 startActivity(i);*/
                 return true;
 
             case R.id.action_demandas:
-                Toast.makeText(this, "Ver demandas ", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Ver demandas ", Toast.LENGTH_SHORT).show();
                  /* Intent i = new Intent(this, datosusuarioActivity.class);
                  startActivity(i);*/
                 return true;
             case R.id.action_perfil:
-               // Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
-                 Intent i = new Intent(this, Demandas.class);
-                 startActivity(i);
+             //   Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
+                 /* Intent i = new Intent(this, demandasActivity.class);
+                 startActivity(i);*/
                 return true;
             case R.id.action_salir:
                 finish();
@@ -64,9 +65,9 @@ public class PrincipalActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_settings:
-                //Toast.makeText(this, "Datos de usuario ", Toast.LENGTH_SHORT).show();
-                 Intent i = new Intent(this, RegistroDatosPersonales.class);
-                 startActivity(i);
+               // Toast.makeText(this, "Datos de usuario ", Toast.LENGTH_SHORT).show();
+                 /* Intent i = new Intent(this, perfilActivity.class);
+                 startActivity(i);*/
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -78,20 +79,15 @@ public class PrincipalActivity extends AppCompatActivity
         Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
     }
     public void lanzarServicios(View view) {
-        Toast.makeText(this, "Servicios de formadores", Toast.LENGTH_SHORT).show();
         /*Intent i = new Intent(this, serviciosActivity.class);
         startActivity(i);*/
     }
     public void lanzarDemandas(View view) {
-        Toast.makeText(this, "Ver demandas ", Toast.LENGTH_SHORT).show();
-       /* Intent i = new Intent(this, demandasActivity.class);
+        /* Intent i = new Intent(this, demandasActivity.class);
         startActivity(i);*/
     }
     public void lanzarPerfil(View view) {
-        Toast.makeText(this, "Gestionar perfil ", Toast.LENGTH_SHORT).show();
-       /* Intent i = new Intent(this, perfilActivity.class);
+        /* Intent i = new Intent(this, perfilActivity.class);
         startActivity(i);*/
     }
-
-
 }//fin clase

@@ -1,6 +1,29 @@
 <resources>
-    <string name="app_name">AppServicios</string>
-    <string name="nombre">Nombre</string>
+    <!--LAYOUT REGISTRO-->
+    <string name="app_name">AppFormaT</string>
+    <string name="titreg">Registro para acceder a AppFormaT</string>
+    <string name="btnreg">Registrarse</string>
+    <string name="btnfb">Accede con Facebook</string>
+    <string name="camposobligatorios">*Campos obligatorios</string>
+     <string name="hintusuario">Usuario*</string>
+    <string name="hintcorreo">Correo electrónico*</string>
+    <string name="hintcontra">Contraseña*</string>
+    <string name="hintrepitecontra">Repite Contraseña*</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="rellenatodos">Rellena todos los campos</string>
+    <string name="logo">logo</string>
+     <!--LAYOUT LOGIN-->
+    <string name="titlogin">!Bienvenid@ a AppFormaT: la formación a tu alcance¡</string>
+    <string name="btnmostrarcontraseña">Mostrar contraseña</string>
+    <string name="btniniciarsesion">Iniciar sesión</string>
+    <string name="btnrecordarcontra">Recordar contraseña</string>
+   <string name="hintusuariologin"> Usuario o Correo electrónico*</string>
+    <!--LAYOUT PRINCIPAL-->
+    <string name="btnservicios">Servicios de formadores</string>
+    <string name="btndemandas">Ver demandas</string>
+    <string name="btnperfil">Gestionar perfil</string>
+    <!--LAYOUT DATOS BASICOS-->
+     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="email">E-mail</string>
     <string name="telefono">Teléfono</string>
@@ -13,5 +36,4 @@
     <string name="escriberespuesta">Mensaje</string>
     <string name="enviar">Enviar respuesta</string>
     <string name="respuesta_enviada">Respuesta enviada</string>
-
 </resources>

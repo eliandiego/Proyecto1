@@ -6,7 +6,7 @@
     <!-- MENU -->
     <item android:id="@+id/action_perfiles"
         android:title="Servicios de formadores"
-        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:icon="@android:drawable/ic_menu_today"
         app:showAsAction="always"/>
     <item android:id="@+id/action_demandas"
         android:title="Ver demandas"
@@ -14,7 +14,7 @@
         app:showAsAction="always"/>
     <item android:id="@+id/action_perfil"
         android:title="Gestionar perfil"
-        android:icon="@android:drawable/ic_menu_today"
+        android:icon="@android:drawable/ic_menu_my_calendar"
         app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_settings"
