@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.fom.proyecto1">
+
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_app_round"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.fom.proyecto1.MainActivity"
-            android:theme="@style/AppTheme">
-        </activity>
-        <!--actividades con sin tool bar por defecto-->
-        <activity android:name="org.fom.proyecto1.RegistroActivity"
+
+        <activity android:name="org.fom.proyecto1.PrincipalActivity"
             android:theme="@style/temasinactionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +25,9 @@
         <activity android:name=".PagoServicio"
             android:label="Demanda de servicio"/>
 
+        <activity android:name=".DemandaServicios"/>
+        <activity android:name=".Perfil"/>
+        <activity android:name=".Demandas"/>
         <activity android:name="org.fom.proyecto1.PrincipalActivity"
             android:theme="@style/temasinactionbar">
         </activity>
@@ -34,4 +36,5 @@
         </activity>
         <!--otras-->
     </application>
+
 </manifest>
