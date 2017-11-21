@@ -8,24 +8,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="org.fom.proyecto1.MainActivity"
+        <activity android:name=".MainActivity"
             android:theme="@style/AppTheme">
         </activity>
         <!--actividades con sin tool bar por defecto-->
-        <activity android:name="org.fom.proyecto1.RegistroActivity"
+        <activity android:name=".RegistroActivity"
             android:theme="@style/temasinactionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name="org.fom.proyecto1.PrincipalActivity"
+        <activity android:name=".PrincipalActivity"
             android:theme="@style/temasinactionbar">
         </activity>
-        <activity android:name="org.fom.proyecto1.LoginActivity"
+        <activity android:name=".LoginActivity"
             android:theme="@style/temasinactionbar">
+        </activity>
+        <activity android:name=".Perfil"          >
         </activity>
         <!--tema AppTeme-->
         <activity android:name=".RegistroDatosPersonales"
@@ -35,7 +35,7 @@
         <activity android:name=".PagoServicio"
             android:label="@string/realizacion_pago"/>
         <activity android:name=".DemandaServicios"/>
-        <activity android:name=".Perfil"/>
+
         <activity android:name=".Demandas"/>
         <activity android:name=".DetalleUsuarioActivity" />
         <activity android:name=".ListadoPerfilesActivity" />

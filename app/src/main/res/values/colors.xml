@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- <color name="colorPrimary">#3F51B5</color>
-     <color name="colorPrimaryDark">#303F9F</color>
-     <color name="colorAccent">#FF4081</color>-->
+    <!-- Colores generales-->
     <color name="colorPrimaryDark">#990912</color>
-    <color name="colorPrimary">#ae6f76</color>
-    <color name="colorAccent">#e1c5c3</color>
+    <color name="colorPrimary">#e7434d</color>
+    <color name="colorAccent">#d6c2c4</color>
 
+    <!-- Colores secciones-->
+    <color name="colorperfiles">#c1d8da</color>
+    <color name="colorcreardemandas">#e0e9be</color>
+    <color name="colordemandas">#f1d1bb</color>
+    <color name="colorperfil">#fce7a1</color>
+
+    <!-- Colores textos-->
     <color name="primaryTextColor">#a9a9a9</color>
     <color name="primaryLightColor">#eab6a4</color>
     <color name="textWhite">#ffffff</color>
