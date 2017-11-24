@@ -1,6 +1,7 @@
 package org.fom.proyecto1;
 //PANTALLA DE ENTRADA
 
+import android.app.ActionBar;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.Color;
@@ -22,7 +23,9 @@ public class PrincipalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-
+        //tool bar
+        Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
+        setSupportActionBar(toolbar);
 
     }
 

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Colores generales-->
-    <color name="colorPrimaryDark">#990912</color>
-    <color name="colorPrimary">#e7434d</color>
+    <color name="colorPrimaryDark">#b44c01</color>
+    <color name="colorPrimary">#fd6b02</color>
     <color name="colorAccent">#d6c2c4</color>
 
     <!-- Colores secciones-->
-    <color name="colorperfiles">#c1d8da</color>
-    <color name="colorcreardemandas">#e0e9be</color>
-    <color name="colordemandas">#f1d1bb</color>
-    <color name="colorperfil">#fce7a1</color>
+    <color name="txtperfiles">#f7771f</color>
+    <color name="colorperfiles">#f5cc79</color>
+    <color name="colorcreardemandas">#f4ab18</color>
+
+
+    <color name="txtdemandas">#7d9b0a</color>
+    <color name="colordemandas">#daed8e</color>
+    <color name="colorperfil">#9dc604</color>
 
     <!-- Colores textos-->
     <color name="primaryTextColor">#a9a9a9</color>

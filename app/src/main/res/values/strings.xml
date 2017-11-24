@@ -1,7 +1,7 @@
 <resources>
     <!--LAYOUT REGISTRO-->
-    <string name="app_name">AppFormaT</string>
-    <string name="titreg">Registro para acceder a AppFormaT</string>
+    <string name="app_name">findTeacher</string>
+    <string name="titreg">Registro para acceder a la app</string>
     <string name="btnreg">Registrarse</string>
     <string name="btnfb">Accede con Facebook</string>
     <string name="camposobligatorios">*Campos obligatorios</string>
@@ -17,7 +17,7 @@
     <string name="salir">Salir</string>
 
      <!--LAYOUT LOGIN-->
-    <string name="titlogin">!Bienvenid@ a AppFormaT: la formación a tu alcance¡</string>
+    <string name="titlogin">!Bienvenid@ a la formación a tu alcance¡</string>
     <string name="btnmostrarcontraseña">Mostrar contraseña</string>
     <string name="btniniciarsesion">Iniciar sesión</string>
     <string name="btnrecordarcontra">Recordar contraseña</string>
@@ -28,8 +28,8 @@
     <string name="btncreardemandas">Crear demandas</string>
     <string name="btnperfil">Gestionar perfil</string>
 
-    <string name="titdemandantes"> Para los que demandan servicios:</string>
-    <string name="titofertantes"> Para los que ofertan servicios:</string>
+    <string name="titdemandantes"> Para los que necesitan formación:</string>
+    <string name="titofertantes"> Para los que ofertan formación:</string>
 
     Gestionar datos personale
     <!--LAYOUT DATOS BASICOS-->
