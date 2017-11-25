@@ -40,6 +40,10 @@
         <activity android:name=".DetalleUsuarioActivity" />
         <activity android:name=".ListadoPerfilesActivity" />
         <activity android:name=".RespuestaActivity" />
+        <activity android:name=".ListadoCrearDemandas" />
+        <activity android:name=".DetalleCrearDemanda" />
+        <activity android:name=".ListadoVerDemandas" />
+        <activity android:name=".DetalleVerDemanda" />
         <!--otras-->
     </application>
 </manifest>

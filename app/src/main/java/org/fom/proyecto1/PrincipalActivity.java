@@ -44,7 +44,7 @@ public class PrincipalActivity extends AppCompatActivity {
                 return true;
             case R.id.crear_demandas:
 
-                i = new Intent(this, DemandaServicios.class);
+                i = new Intent(this,ListadoCrearDemandas.class);
                 startActivity(i,
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
@@ -88,7 +88,7 @@ public class PrincipalActivity extends AppCompatActivity {
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
     public void lanzarDemandas(View view) {
-        Intent i = new Intent(this, DemandaServicios.class);
+        Intent i = new Intent(this, ListadoCrearDemandas.class);
         startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
     public void lanzarPerfil(View view) {
@@ -96,7 +96,7 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
     public void lanzarPuntuaciones(View view) {
-        Intent i = new Intent(this, Demandas.class);
+        Intent i = new Intent(this, ListadoVerDemandas.class);
         startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 }//fin clase
