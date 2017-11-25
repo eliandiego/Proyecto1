@@ -35,7 +35,6 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
         Usuario u1 = new Usuario();
         u1.setProfesion("Personal de limpieza");
         u1.setResourceId(R.drawable.cleaner);
-        u1.setPrecio("Desde $20");
         u1.setDescripcion("Se ocupa de la limpieza y mantenimiento de inmuebles. " +
                 "Para ello, emplea los productos y la maquinarias más adecuados y respeta las normas de utilización. ");
         personList.add(u1);
@@ -43,7 +42,6 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
         Usuario u2 = new Usuario();
         u2.setProfesion("Jardinera");
         u2.setResourceId(R.drawable.gardener);
-        u2.setPrecio("Desde $15");
         u2.setDescripcion("Se dedica al cuidado de plantas como flores, arbustos, árboles y césped. " +
                 "Pueden trabajar en un parque, reserva natural, parque público o privado, en rotondas de carretera, en campos de deportes," +
                 " o en áreas verdes de edificios de oficinas de, por ejemplo.");
@@ -53,7 +51,6 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         u3.setProfesion("Conductor");
         u3.setResourceId(R.drawable.driver);
-        u3.setPrecio("Desde $10");
         u3.setDescripcion("Su función consiste en trasladar a las personalidades o visitantes comerciales o industriales" +
                 " de una empresa desde el punto de llegada, por ejemplo, el aeropuerto o estación de trenes, hasta el lugar de destino, " +
                 "por ejemplo, las instalaciones de la compañía. El chófer espera a sus clientes en un lugar acordado");
@@ -63,7 +60,6 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         u4.setProfesion("Cocinero");
         u4.setResourceId(R.drawable.cocinero);
-        u4.setPrecio("Desde $50");
         u4.setDescripcion("Conoce con propiedad los productos, la administración, la contabilidad, el derecho, la nutrición, " +
                 "la enología, los costeos, la química, la historia y la geografía, entre otros muchos elementos. ");
         personList.add(u4);
@@ -72,7 +68,6 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         u5.setProfesion("Profesora de Matemática");
         u5.setResourceId(R.drawable.profesora);
-        u5.setPrecio("Desde $15");
         u5.setDescripcion("La profesora trabaja a medio tiempo. En sus ratos libres enseña matemáticas a personas particulares. " +
                 "La profesora conoce muchas áreas como Algebra y Aritmética");
         personList.add(u5);
