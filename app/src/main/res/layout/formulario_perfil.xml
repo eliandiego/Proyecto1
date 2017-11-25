@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@color/colorAccent"
     android:layout_height="match_parent">
 
 
@@ -78,7 +76,6 @@
         tools:layout_editor_absoluteY="16dp" />
 
 
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
@@ -87,7 +84,6 @@
         android:text="Materia a dictar:"
         tools:layout_editor_absoluteX="45dp"
         tools:layout_editor_absoluteY="67dp" />
-
 
 
     <TextView

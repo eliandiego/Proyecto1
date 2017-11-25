@@ -10,7 +10,7 @@
         app:showAsAction="always"/>
 
     <item android:id="@+id/crear_demandas"
-        android:title="Crear demandas"
+        android:title="@string/btncreardemandas"
         android:icon="@android:drawable/ic_dialog_dialer"
         app:showAsAction="always"/>
 
