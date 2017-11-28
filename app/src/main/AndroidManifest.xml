@@ -4,15 +4,19 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_app_round"
+        android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- actividades con sin tool bar por defecto -->
+
+
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme"></activity>
-        <!-- actividades con sin tool bar por defecto -->
+        <!--actividades con sin tool bar por defecto-->
         <activity
             android:name=".RegistroActivity"
             android:theme="@style/temasinactionbar">
@@ -22,6 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".PrincipalActivity"
             android:theme="@style/temasinactionbar"></activity>
@@ -33,14 +38,9 @@
             android:name=".RegistroDatosPersonales"
             android:label="@string/datos_personales" />
         <activity
-            android:name=".EnvioRespuestaPersonal"
-            android:label="Demanda de servicio" />
-        <activity
             android:name=".PagoServicio"
             android:label="@string/realizacion_pago" />
         <activity android:name=".DemandaServicios" />
-        <activity android:name=".Perfil" />
-        <activity android:name=".DemandasActivity" />
         <activity android:name=".DetalleUsuarioActivity" />
         <activity android:name=".ListadoPerfilesActivity" />
         <activity android:name=".RespuestaActivity" />
@@ -48,6 +48,19 @@
         <activity
             android:name=".AmpliarInfoActivity"
             android:label="Ampliar Información" />
+        <activity
+            android:name=".DemandasActivity"
+            android:theme="@style/temasinactionbar"></activity>
+        <!--tema AppTeme-->
+        <activity android:name=".Perfil"></activity>
+        <activity
+            android:name=".EnvioRespuestaPersonal"
+            android:label="@string/tit_envio_respuesta" />
+        <activity android:name=".ListadoCrearDemandas" />
+        <activity android:name=".DetalleCrearDemanda" />
+        <activity android:name=".ListadoVerDemandas" />
+        <activity android:name=".DetalleVerDemanda" />
+        <!--otras-->
     </application>
 
 </manifest>

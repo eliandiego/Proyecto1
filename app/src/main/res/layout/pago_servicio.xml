@@ -99,20 +99,22 @@
                 android:id="@+id/tv_d_precio_hora"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
-                android:layout_marginTop="24dp"
-                android:text="@string/d_precio_hora"
 
+                android:layout_marginTop="8dp"
+                android:text="@string/d_precio_hora"
+                android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="@+id/tv_d_horas"
-                app:layout_constraintTop_toBottomOf="@+id/tv_detalle" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_texto_nombre_profesor" />
 
             <TextView
                 android:id="@+id/tv_precio_hora"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/precio_hora"
+                android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="@+id/tv_horas"
-                app:layout_constraintTop_toBottomOf="@+id/tv_detalle" />
+                app:layout_constraintTop_toBottomOf="@+id/tv_nombre_profesor" />
 
             <TextView
                 android:id="@+id/tv_horas"
@@ -120,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/tiempo"
+                android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="@+id/tv_total"
                 app:layout_constraintTop_toBottomOf="@+id/tv_precio_hora" />
 
@@ -129,6 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/horas"
+                android:textAlignment="textEnd"
                 app:layout_constraintEnd_toEndOf="@+id/tv_d_total"
                 app:layout_constraintTop_toBottomOf="@+id/tv_d_precio_hora" />
 
@@ -139,6 +143,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/total"
+                android:textAlignment="textEnd"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -152,6 +157,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="24dp"
                 android:text="@string/d_total"
+                android:textAlignment="textEnd"
                 android:textSize="24sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.526"
@@ -165,14 +171,35 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_weight="1"
+                android:background="@drawable/ripplereg"
                 android:elevation="2dp"
-                android:text="@string/guardar"
+                android:text="@string/tramitar_pago"
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+            <TextView
+                android:id="@+id/tv_nombre_profesor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tit_nombre_profesor"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="@+id/tv_precio_hora"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detalle" />
+
+            <TextView
+                android:id="@+id/tv_texto_nombre_profesor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/nombre_profesor"
+                android:textAlignment="textEnd"
+                app:layout_constraintEnd_toEndOf="@+id/tv_d_precio_hora"
+                app:layout_constraintTop_toBottomOf="@+id/tv_detalle" />
 
 
         </android.support.constraint.ConstraintLayout>
