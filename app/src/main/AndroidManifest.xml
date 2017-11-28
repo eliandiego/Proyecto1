@@ -34,7 +34,7 @@
         </activity><activity android:name=".RegistroDatosPersonales"
             android:label="@string/datos_personales"/>
         <activity android:name=".EnvioRespuestaPersonal"
-            android:label="Demanda de servicio"/>
+            android:label="@string/tit_envio_respuesta"/>
         <activity android:name=".PagoServicio"
             android:label="@string/realizacion_pago"/>
         <activity android:name=".DemandaServicios"/>

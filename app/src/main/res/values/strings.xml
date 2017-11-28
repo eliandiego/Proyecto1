@@ -31,8 +31,8 @@
     <string name="titdemandantes"> Para los que necesitan formación:</string>
     <string name="titofertantes"> Para los que ofertan formación:</string>
 
-    Gestionar datos personale
-    <!--LAYOUT DATOS BASICOS-->
+
+    <!--LAYOUT DATOS BASICOS Gestión de datos personales-->
     <string name="datos_personales">Datos personales</string>
      <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
@@ -40,14 +40,23 @@
     <string name="telefono">Teléfono</string>
     <string name="localidad">Localidad</string>
     <string name="guardar">Guardar</string>
-    <string name="tit_registro_datos">"UsuarioX"</string>
+    <string name="tit_registro_datos">Usuario analopez</string>
     <string name="err_campo_vacio">Este campo es obligatorio</string>
     <string name="datos_guardados">Datos guardados correctamente</string>
-    <string name="tit_envio_respuesta">Envío de respuesta personal</string>
+    <!--LAYOUT ENVIO RESPUESTA PERSONAL-->
+    <string name="tit_envio_respuesta">Envío de respuesta</string>
+    <string name="nom_materia">Matemáticas</string>
+    <string name="tit_materia">Materia</string>
     <string name="escriberespuesta">Mensaje</string>
     <string name="enviar">Enviar respuesta</string>
     <string name="respuesta_enviada">Respuesta enviada</string>
+    <string name="nombre_destinatario">Ana López</string>
+    <string name="tit_nombre_destinatario">Destinatario</string>
+    <string name="usuario_profesor">Usuario jperez</string>
+    <string name="tit_asunto">Demanda a la que responde</string>
+    <string name="asunto">Profesor de Matemáticas en Valencia y alrededores</string>
     <!--LAYOUT REALIZACION PAGO-->
+    <string name="pago_servicio">Pago del servicio</string>
     <string name="realizacion_pago">Realización de pago</string>
     <string name="concepto">Concepto</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor nibh, fringilla sit amet elit ac, tincidunt posuere nibh.</string>
@@ -59,5 +68,8 @@
     <string name="total">Total a pagar</string>
     <string name="d_total">€90</string>
     <string name="pago_realizado">Pago realizado correctamente</string>
-    <string name="usuariox">Usuario X</string>
+    <string name="usuariox">Usuario analopez</string>
+    <string name="tit_nombre_profesor">Nombre del profesor</string>
+    <string name="nombre_profesor">José Pérez</string>
+    <string name="tramitar_pago">Tramitar pago</string>
 </resources>
