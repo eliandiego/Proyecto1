@@ -6,31 +6,24 @@
     <!-- MENU -->
     <item android:id="@+id/action_perfiles"
         android:title="@string/btnservicios"
-        android:icon="@android:drawable/ic_menu_today"
+        android:icon="@drawable/ic_perfiles"
         app:showAsAction="always"/>
-
     <item android:id="@+id/crear_demandas"
         android:title="@string/btncreardemandas"
-        android:icon="@android:drawable/ic_dialog_dialer"
+        android:icon="@drawable/ic_creardemanda"
         app:showAsAction="always"/>
-
     <item android:id="@+id/action_demandas"
         android:title="@string/btndemandas"
-        android:icon="@android:drawable/ic_menu_search"
+        android:icon="@drawable/ic_demandas"
         app:showAsAction="always"/>
-
-
-
     <item android:id="@+id/action_perfil"
         android:title="@string/btnperfil"
-        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:icon="@drawable/ic_perfil"
         app:showAsAction="ifRoom"/>
-
     <item android:id="@+id/action_settings"
         android:title="@string/gestionarmicuenta"
         android:icon="@android:drawable/ic_menu_preferences"
         app:showAsAction="never"/>
-
     <item android:id="@+id/action_salir"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/salir"

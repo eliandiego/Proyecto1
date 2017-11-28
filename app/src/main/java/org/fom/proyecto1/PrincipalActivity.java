@@ -47,13 +47,14 @@ public class PrincipalActivity extends AppCompatActivity {
                 return true;
             case R.id.crear_demandas:
 
-                i = new Intent(this,ListadoCrearDemandas.class);
+                i = new Intent(this, ListadoCrearDemandas.class);
                 startActivity(i,
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
             case R.id.action_demandas:
-                i = new Intent(this, Demandas.class);
+
+                i = new Intent(this, DemandasActivity.class);
                 startActivity(i,
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
@@ -64,7 +65,7 @@ public class PrincipalActivity extends AppCompatActivity {
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
-                       case R.id.action_salir:
+            case R.id.action_salir:
                 finish();
                 i = new Intent(Intent.ACTION_MAIN);
                 i.addCategory(Intent.CATEGORY_HOME);
@@ -81,25 +82,31 @@ public class PrincipalActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
     //=========================================================
     private void action(int resid) {
         Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
     }
+
     public void lanzarServicios(View view) {
         Intent i = new Intent(this, ListadoPerfilesActivity.class);
         startActivity(i,
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
+
     public void lanzarDemandas(View view) {
         Intent i = new Intent(this, ListadoCrearDemandas.class);
-        startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
+
     public void lanzarPerfil(View view) {
         Intent i = new Intent(this, Perfil.class);
-        startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
+
     public void lanzarPuntuaciones(View view) {
+
         Intent i = new Intent(this, ListadoVerDemandas.class);
-        startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 }//fin clase

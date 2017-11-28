@@ -5,7 +5,7 @@
     <string name="btnreg">Registrarse</string>
     <string name="btnfb">Accede con Facebook</string>
     <string name="camposobligatorios">*Campos obligatorios</string>
-     <string name="hintusuario">Usuario*</string>
+    <string name="hintusuario">Usuario*</string>
     <string name="hintcorreo">Correo electrónico*</string>
     <string name="hintcontra">Contraseña*</string>
     <string name="hintrepitecontra">Repite Contraseña*</string>
@@ -16,38 +16,49 @@
     <string name="gestionarmicuenta">Gestionar mi cuenta</string>
     <string name="salir">Salir</string>
 
+
      <!--LAYOUT LOGIN-->
     <string name="titlogin">!Bienvenid@ a la formación a tu alcance¡</string>
+
     <string name="btnmostrarcontraseña">Mostrar contraseña</string>
     <string name="btniniciarsesion">Iniciar sesión</string>
     <string name="btnrecordarcontra">Recordar contraseña</string>
-   <string name="hintusuariologin"> Usuario o Correo electrónico*</string>
+    <string name="hintusuariologin"> Usuario o Correo electrónico*</string>
     <!--LAYOUT PRINCIPAL-->
     <string name="btnservicios">Servicios de formadores</string>
     <string name="btndemandas">Ver demandas</string>
-    <string name="btncreardemandas">Crear demandas</string>
+    <string name="btncreardemandas">Crear demanda</string>
     <string name="btnperfil">Gestionar perfil</string>
 
     <string name="titdemandantes"> Para los que necesitan formación:</string>
     <string name="titofertantes"> Para los que ofertan formación:</string>
 
-    Gestionar datos personale
-    <!--LAYOUT DATOS BASICOS-->
+
+    <!--LAYOUT DATOS BASICOS Gestión de datos personales-->
     <string name="datos_personales">Datos personales</string>
-     <string name="nombre">Nombre</string>
+    <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="email">E-mail</string>
     <string name="telefono">Teléfono</string>
     <string name="localidad">Localidad</string>
     <string name="guardar">Guardar</string>
-    <string name="tit_registro_datos">"UsuarioX"</string>
+    <string name="tit_registro_datos">Usuario analopez</string>
     <string name="err_campo_vacio">Este campo es obligatorio</string>
     <string name="datos_guardados">Datos guardados correctamente</string>
-    <string name="tit_envio_respuesta">Envío de respuesta personal</string>
+    <!--LAYOUT ENVIO RESPUESTA PERSONAL-->
+    <string name="tit_envio_respuesta">Envío de respuesta</string>
+    <string name="nom_materia">Matemáticas</string>
+    <string name="tit_materia">Materia</string>
     <string name="escriberespuesta">Mensaje</string>
     <string name="enviar">Enviar respuesta</string>
     <string name="respuesta_enviada">Respuesta enviada</string>
+    <string name="nombre_destinatario">Ana López</string>
+    <string name="tit_nombre_destinatario">Destinatario</string>
+    <string name="usuario_profesor">Usuario jperez</string>
+    <string name="tit_asunto">Demanda a la que responde</string>
+    <string name="asunto">Profesor de Matemáticas en Valencia y alrededores</string>
     <!--LAYOUT REALIZACION PAGO-->
+    <string name="pago_servicio">Pago del servicio</string>
     <string name="realizacion_pago">Realización de pago</string>
     <string name="concepto">Concepto</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor nibh, fringilla sit amet elit ac, tincidunt posuere nibh.</string>
@@ -59,6 +70,26 @@
     <string name="total">Total a pagar</string>
     <string name="d_total">€90</string>
     <string name="pago_realizado">Pago realizado correctamente</string>
+
+    <string name="nombre_info">Nombre</string>
+    <string name="apellidos_info">Apellidos</string>
+    <string name="correo_info">Correo</string>
+    <string name="numero_de_celular_info">Numero de celular</string>
+    <string name="solicitar_informacion_sobre_info">Agregar otra información</string>
+    <string name="solicitar_info">Enviar información</string>
+    <string name="direccion_info">Dirección</string>
+    <string name="nombre_respuesta">Nombre</string>
+    <string name="respuesta_respuesta">Respuesta</string>
+    <string name="añade_respuesta">Añade un mensaje...</string>
+    <string name="responder_respuesta">Responder</string>
+    <string name="solicitar_servicio_detalle">Solicitar Servicio</string>
+    <string name="descripcion_detalle">Descripción:</string>
+
+    <string name="usuariox">Usuario analopez</string>
+    <string name="tit_nombre_profesor">Nombre del profesor</string>
+    <string name="nombre_profesor">José Pérez</string>
+    <string name="tramitar_pago">Tramitar pago</string>
+
     <string name="usuariox">Usuario X</string>
     <!--LAYOUT CREAR DEMANDA-->
     <string name="mis_demandas">Mis Demandas</string>

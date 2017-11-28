@@ -28,8 +28,8 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
-        recyclerView.setAdapter(adaptadorLista);
+        //AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
+        //recyclerView.setAdapter(adaptadorLista);
     }
 
     private void llenardatos() {
@@ -81,7 +81,6 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
     }
 
 
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -100,13 +99,13 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
                 return true;
             case R.id.crear_demandas:
 
-                i = new Intent(this,ListadoCrearDemandas.class);
+                i = new Intent(this, ListadoCrearDemandas.class);
                 startActivity(i,
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
             case R.id.action_demandas:
-                i = new Intent(this, Demandas.class);
+                i = new Intent(this, DemandasActivity.class);
                 startActivity(i,
                         ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;

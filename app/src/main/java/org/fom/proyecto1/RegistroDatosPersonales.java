@@ -42,7 +42,7 @@ public class RegistroDatosPersonales extends AppCompatActivity {
 
 
         //Implementación del botón de guardado
-        bGuardar= (Button) findViewById(R.id.b_guardar);
+        bGuardar=  findViewById(R.id.b_guardar);
         bGuardar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
                 if( !campoObligatorioVacio(et_nombre) &&
@@ -71,7 +71,7 @@ public class RegistroDatosPersonales extends AppCompatActivity {
         finish(); //Finaliza la actividad actual
 
         //Pruebas Isabel: Inicia actividad de prueba, para que yo pueda probar mis cambios en el proyecto
-        /*Intent i = new Intent(this, PagoServicio.class);
+        /*Intent i = new Intent(this, EnvioRespuestaPersonal.class);
         startActivity(i);*/
     }
 

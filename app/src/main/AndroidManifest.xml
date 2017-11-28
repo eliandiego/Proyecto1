@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.fom.proyecto1">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -8,41 +9,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme">
-        </activity>
+
+        <!-- actividades con sin tool bar por defecto -->
+
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme"></activity>
         <!--actividades con sin tool bar por defecto-->
-        <activity android:name=".RegistroActivity"
+        <activity
+            android:name=".RegistroActivity"
             android:theme="@style/temasinactionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PrincipalActivity"
-            android:theme="@style/temasinactionbar">
-        </activity>
-        <activity android:name=".LoginActivity"
-            android:theme="@style/temasinactionbar">
-        </activity>
 
-        <activity android:name=".Demandas"
-            android:theme="@style/temasinactionbar">
-        </activity>
-        <!--tema AppTeme-->
-        <activity android:name=".Perfil"          >
-        </activity><activity android:name=".RegistroDatosPersonales"
-            android:label="@string/datos_personales"/>
-        <activity android:name=".EnvioRespuestaPersonal"
-            android:label="Demanda de servicio"/>
-        <activity android:name=".PagoServicio"
-            android:label="@string/realizacion_pago"/>
-        <activity android:name=".DemandaServicios"/>
-
-
+        <activity
+            android:name=".PrincipalActivity"
+            android:theme="@style/temasinactionbar"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/temasinactionbar"></activity>
+        <!-- tema AppTeme -->
+        <activity
+            android:name=".RegistroDatosPersonales"
+            android:label="@string/datos_personales" />
+        <activity
+            android:name=".PagoServicio"
+            android:label="@string/realizacion_pago" />
+        <activity android:name=".DemandaServicios" />
         <activity android:name=".DetalleUsuarioActivity" />
         <activity android:name=".ListadoPerfilesActivity" />
         <activity android:name=".RespuestaActivity" />
+        <!-- otras -->
+        <activity
+            android:name=".AmpliarInfoActivity"
+            android:label="Ampliar Información" />
+        <activity
+            android:name=".DemandasActivity"
+            android:theme="@style/temasinactionbar"></activity>
+        <!--tema AppTeme-->
+        <activity android:name=".Perfil"></activity>
+        <activity
+            android:name=".EnvioRespuestaPersonal"
+            android:label="@string/tit_envio_respuesta" />
         <activity android:name=".ListadoCrearDemandas" />
         <activity android:name=".DetalleCrearDemanda" />
         <activity android:name=".ListadoVerDemandas" />
@@ -50,4 +63,5 @@
         <activity android:name=".ListadoVerMisDemandas" />
         <!--otras-->
     </application>
+
 </manifest>

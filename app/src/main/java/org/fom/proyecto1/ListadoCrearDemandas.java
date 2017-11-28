@@ -28,7 +28,7 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
+        AdaptadorListaPerfiles adaptadorLista = new AdaptadorListaPerfiles(this, personList, this);
         recyclerView.setAdapter(adaptadorLista);
     }
 
