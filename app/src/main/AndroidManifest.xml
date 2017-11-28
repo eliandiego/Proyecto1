@@ -47,6 +47,7 @@
         <activity android:name=".DetalleCrearDemanda" />
         <activity android:name=".ListadoVerDemandas" />
         <activity android:name=".DetalleVerDemanda" />
+        <activity android:name=".ListadoVerMisDemandas" />
         <!--otras-->
     </application>
 </manifest>

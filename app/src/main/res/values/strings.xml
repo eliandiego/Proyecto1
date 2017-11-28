@@ -60,4 +60,7 @@
     <string name="d_total">€90</string>
     <string name="pago_realizado">Pago realizado correctamente</string>
     <string name="usuariox">Usuario X</string>
+    <!--LAYOUT CREAR DEMANDA-->
+    <string name="mis_demandas">Mis Demandas</string>
+
 </resources>

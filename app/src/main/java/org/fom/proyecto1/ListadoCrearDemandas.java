@@ -1,10 +1,14 @@
 package org.fom.proyecto1;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,6 +76,44 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
                 "La profesora conoce muchas áreas como Algebra y Aritmética");
         personList.add(u5);
     }
+
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_crear_demanda, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i;
+        switch (item.getItemId()) {
+
+
+            case R.id.mis_demandas:
+                i = new Intent(this, ListadoVerMisDemandas.class);
+                startActivity(i,
+                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                return true;
+
+
+            case R.id.action_salir:
+                finish();
+                i = new Intent(Intent.ACTION_MAIN);
+                i.addCategory(Intent.CATEGORY_HOME);
+                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(i);
+                return true;
+
+                default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+    //=========================================================
 
     @Override
     public void onClickListener(Usuario usuario) {
