@@ -5,7 +5,7 @@
     <string name="btnreg">Registrarse</string>
     <string name="btnfb">Accede con Facebook</string>
     <string name="camposobligatorios">*Campos obligatorios</string>
-     <string name="hintusuario">Usuario*</string>
+    <string name="hintusuario">Usuario*</string>
     <string name="hintcorreo">Correo electrónico*</string>
     <string name="hintcontra">Contraseña*</string>
     <string name="hintrepitecontra">Repite Contraseña*</string>
@@ -16,12 +16,12 @@
     <string name="gestionarmicuenta">Gestionar mi cuenta</string>
     <string name="salir">Salir</string>
 
-     <!--LAYOUT LOGIN-->
+    <!--LAYOUT LOGIN-->
     <string name="titlogin">!Bienvenid@ a AppFormaT: la formación a tu alcance¡</string>
     <string name="btnmostrarcontraseña">Mostrar contraseña</string>
     <string name="btniniciarsesion">Iniciar sesión</string>
     <string name="btnrecordarcontra">Recordar contraseña</string>
-   <string name="hintusuariologin"> Usuario o Correo electrónico*</string>
+    <string name="hintusuariologin"> Usuario o Correo electrónico*</string>
     <!--LAYOUT PRINCIPAL-->
     <string name="btnservicios">Servicios de formadores</string>
     <string name="btndemandas">Ver demandas</string>
@@ -30,7 +30,7 @@
     Gestionar datos personale
     <!--LAYOUT DATOS BASICOS-->
     <string name="datos_personales">Datos personales</string>
-     <string name="nombre">Nombre</string>
+    <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
     <string name="email">E-mail</string>
     <string name="telefono">Teléfono</string>
@@ -56,4 +56,17 @@
     <string name="d_total">€90</string>
     <string name="pago_realizado">Pago realizado correctamente</string>
     <string name="usuariox">Usuario X</string>
+    <string name="nombre_info">Nombre</string>
+    <string name="apellidos_info">Apellidos</string>
+    <string name="correo_info">Correo</string>
+    <string name="numero_de_celular_info">Numero de celular</string>
+    <string name="solicitar_informacion_sobre_info">Agregar otra información</string>
+    <string name="solicitar_info">Enviar información</string>
+    <string name="direccion_info">Dirección</string>
+    <string name="nombre_respuesta">Nombre</string>
+    <string name="respuesta_respuesta">Respuesta</string>
+    <string name="añade_respuesta">Añade un mensaje...</string>
+    <string name="responder_respuesta">Responder</string>
+    <string name="solicitar_servicio_detalle">Solicitar Servicio</string>
+    <string name="descripcion_detalle">Descripción:</string>
 </resources>

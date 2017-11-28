@@ -48,7 +48,7 @@ public class PrincipalActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_demandas:
-                 i = new Intent(this, Demandas.class);
+                 i = new Intent(this, DemandasActivity.class);
                  startActivity(i);
                 return true;
 
@@ -90,7 +90,7 @@ public class PrincipalActivity extends AppCompatActivity
         startActivity(i);
         }
     public void lanzarPuntuaciones(View view) {
-        Intent i = new Intent(this, Demandas.class);
+        Intent i = new Intent(this, DemandasActivity.class);
         startActivity(i);
     }
 }//fin clase

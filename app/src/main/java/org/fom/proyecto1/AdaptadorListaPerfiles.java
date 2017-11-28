@@ -15,14 +15,14 @@ import java.util.List;
  * Created by Kelvin on 8/11/2017.
  */
 
-public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.ViewHolder> {
+public class AdaptadorListaPerfiles extends RecyclerView.Adapter<AdaptadorListaPerfiles.ViewHolder> {
 
     private LayoutInflater inflador;
     private List<Usuario> usuarios;
     private ItemClickListener itemClickListener;
     private Context context;
 
-    public AdaptadorLista(Context context, List<Usuario> usuarios, ItemClickListener itemClickListener) {
+    public AdaptadorListaPerfiles(Context context, List<Usuario> usuarios, ItemClickListener itemClickListener) {
 
         inflador = (LayoutInflater) context
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -37,7 +37,7 @@ public class AdaptadorLista extends RecyclerView.Adapter<AdaptadorLista.ViewHold
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = inflador.inflate(R.layout.item_lista, parent, false);
+        View view = inflador.inflate(R.layout.item_lista_perfil, parent, false);
         return new ViewHolder(view);
     }
 

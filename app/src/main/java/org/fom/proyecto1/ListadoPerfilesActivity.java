@@ -24,8 +24,8 @@ public class ListadoPerfilesActivity extends AppCompatActivity implements ItemCl
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
-        recyclerView.setAdapter(adaptadorLista);
+        AdaptadorListaPerfiles adaptadorListaPerfiles = new AdaptadorListaPerfiles(this, personList, this);
+        recyclerView.setAdapter(adaptadorListaPerfiles);
     }
 
     private void llenardatos() {
