@@ -74,7 +74,7 @@
             android:background="@color/colorcreardemandas"
             android:clickable="true"
             android:drawablePadding="50dp"
-            android:drawableStart="@android:drawable/ic_menu_today"
+            android:drawableStart="@drawable/ic_perfiles"
 
             android:elevation="4dp"
             android:onClick="lanzarServicios"
@@ -100,7 +100,7 @@
             android:background="@color/colorcreardemandas"
             android:clickable="true"
             android:drawablePadding="50dp"
-            android:drawableStart="@android:drawable/ic_dialog_dialer"
+            android:drawableStart="@drawable/ic_creardemanda"
             android:elevation="4dp"
             android:onClick="lanzarDemandas"
             android:paddingStart="20dp"
@@ -139,7 +139,7 @@
             android:background="@color/colorperfil"
             android:clickable="true"
             android:drawablePadding="50dp"
-            android:drawableStart="@android:drawable/ic_menu_search"
+            android:drawableStart="@drawable/ic_demandas"
             android:elevation="4dp"
             android:onClick="lanzarPuntuaciones"
             android:paddingStart="20dp"
@@ -166,7 +166,7 @@
             android:clickable="true"
             android:drawablePadding="50dp"
 
-            android:drawableStart="@android:drawable/ic_menu_my_calendar"
+            android:drawableStart="@drawable/ic_perfil"
 
             android:elevation="4dp"
             android:onClick="lanzarPerfil"

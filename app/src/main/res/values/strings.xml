@@ -25,7 +25,7 @@
     <!--LAYOUT PRINCIPAL-->
     <string name="btnservicios">Servicios de formadores</string>
     <string name="btndemandas">Ver demandas</string>
-    <string name="btncreardemandas">Crear demandas</string>
+    <string name="btncreardemandas">Crear demanda</string>
     <string name="btnperfil">Gestionar perfil</string>
 
     <string name="titdemandantes"> Para los que necesitan formación:</string>
