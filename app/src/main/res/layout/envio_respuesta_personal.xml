@@ -28,21 +28,34 @@
             app:toolbarId="@+id/toolbar">
 
 
-            <LinearLayout
+            <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="16dp"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icono_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:contentDescription="@string/usuariox"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_usuario" />
 
                 <TextView
                     android:id="@+id/tv_usuario"
-                    android:layout_width="match_parent"
+                    android:layout_width="185dp"
                     android:layout_height="wrap_content"
-                    android:text="@string/usuario_profesor"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="36dp"
+                    android:text="@string/tit_registro_datos"
                     android:textColor="#fff"
-                    android:textSize="18sp" />
-            </LinearLayout>
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/icono_usuario"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
