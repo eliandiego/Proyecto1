@@ -90,8 +90,12 @@
     <string name="nombre_profesor">José Pérez</string>
     <string name="tramitar_pago">Tramitar pago</string>
 
-    <string name="usuariox">Usuario X</string>
+    <!--string name="usuariox">Usuario X</string-->
     <!--LAYOUT CREAR DEMANDA-->
     <string name="mis_demandas">Mis Demandas</string>
 
+
+    <string name="servicio_cancelado">Servicio cancelado correctamente</string>
+    <string name="respuesta_dada">Respuesta enviada correctamente</string>
+    <string name="demanda_creada">Demanda creada correctamente</string>
 </resources>

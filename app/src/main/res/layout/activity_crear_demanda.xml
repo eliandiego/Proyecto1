@@ -35,7 +35,6 @@
                 android:id="@+id/nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/foto_principal"
@@ -49,6 +48,7 @@
                 android:textColor="@color/fb"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/nombre" />
@@ -57,7 +57,7 @@
                 android:id="@+id/label_descripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="8dp"
                 android:text="Descripción:"
                 android:textStyle="bold"
@@ -68,10 +68,9 @@
                 android:id="@+id/txv_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="18dp"
                 android:layout_marginTop="8dp"
-                android:text="Los jardineros también se ocupan de la preparación y el tratamiento de la tierra en la que deben ser colocadas, la poda, los injertos, la retirada de flores y plantas muertas y su sustitución por otras, la mezcla y preparación de insecticidas y otros productos para el tratamiento de plagas o abono del jardín"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/label_descripcion" />
 
@@ -104,7 +103,8 @@
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/txv_descripcion"
-                tools:textColor="@color/colorPrimary" />
+                tools:textColor="@color/colorPrimary"
+                android:layout_marginLeft="10dp" />
 
 
 
@@ -114,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:text="Fecha requerida:dd/mm/aa"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView1" />
+                app:layout_constraintTop_toBottomOf="@id/textView1"
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/editText1"
@@ -123,7 +124,8 @@
                 android:ems="10"
                 android:inputType="date"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView2" />
+                app:layout_constraintTop_toBottomOf="@id/textView2"
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -134,7 +136,8 @@
                 android:layout_marginTop="21dp"
                 android:text="Horario requerido:"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView2" />
+                app:layout_constraintTop_toBottomOf="@id/textView2"
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/editText2"
@@ -143,7 +146,8 @@
                 android:ems="10"
                 android:inputType="numberDecimal"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView3" />
+                app:layout_constraintTop_toBottomOf="@id/textView3"
+                android:layout_marginLeft="10dp"/>
 
             <TextView
                 android:id="@+id/textView4"
@@ -154,7 +158,8 @@
                 android:layout_marginTop="21dp"
                 android:text="Descripción del servicio:"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/editText2" />
+                app:layout_constraintTop_toBottomOf="@id/editText2"
+                android:layout_marginLeft="10dp"/>
 
             <EditText
                 android:id="@+id/editText3"
@@ -163,7 +168,8 @@
                 android:ems="10"
                 android:inputType="none"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textView4" />
+                app:layout_constraintTop_toBottomOf="@id/textView4"
+                android:layout_marginLeft="10dp"/>
 
 
             <Button
@@ -174,7 +180,9 @@
                 android:text="Crear Demanda"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent" />
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_gravity="center"
+                android:onClick="demandaCreada"/>
 
 
 

@@ -11,6 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
 
 
             <ImageView
@@ -26,7 +32,7 @@
                 android:id="@+id/nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:layout_marginLeft="15dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/foto_principal"
@@ -39,47 +45,52 @@
                 android:text="Jardinero"
                 android:textColor="@color/fb"
                 android:textSize="20sp"
+                android:layout_marginLeft="15dp"
                 android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/nombre" />
 
-            <TextView
-                android:id="@+id/label_descripcion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-                android:layout_marginTop="8dp"
-                android:text="Descripción:"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/profesion" />
+
 
             <TextView
                 android:id="@+id/txv_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="8dp"
+                android:layout_margin="10dp"
                 android:layout_marginTop="8dp"
-                android:text="Fecha requerida: 12/12/2017 ; Horario requerido: 10 AM ; Decripción del servicio: Necesito clases de matemáticas referente a trigonometría"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/label_descripcion" />
 
 
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"       >
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCELAR SERVICIO"
+            android:onClick="cancelarServicio"/>
 
-
-
-
+        <Button
+            android:id="@+id/pago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagar"
+            android:onClick="pagar"/>
 
 
 
     </LinearLayout>
 
 
-
+</LinearLayout>
 
 </ScrollView>

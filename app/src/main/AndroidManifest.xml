@@ -56,11 +56,19 @@
         <activity
             android:name=".EnvioRespuestaPersonal"
             android:label="@string/tit_envio_respuesta" />
-        <activity android:name=".ListadoCrearDemandas" />
-        <activity android:name=".DetalleCrearDemanda" />
+        <activity android:name=".ListadoCrearDemandas"
+            android:label="Qué Necesitas?"   />
+        <activity android:name=".DetalleCrearDemanda"
+            android:label="Crear Demanda" />
         <activity android:name=".ListadoVerDemandas" />
-        <activity android:name=".DetalleVerDemanda" />
-        <activity android:name=".ListadoVerMisDemandas" />
+        <activity android:name=".DetalleVerDemanda"
+            android:label="Mi Demanda" />
+        <activity android:name=".ListadoVerMisDemandas"
+        android:label="Mis Demandas" />
+        <activity android:name=".DetalleConsultaMiDemanda"
+            android:label="Consulta" />
+        <activity android:name=".DetalleRespuesta"
+            android:label="Respuesta" />
         <!--otras-->
     </application>
 

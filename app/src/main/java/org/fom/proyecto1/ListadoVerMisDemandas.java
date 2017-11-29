@@ -28,7 +28,7 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
+        AdaptadorListaPerfiles adaptadorLista = new AdaptadorListaPerfiles(this, personList, this);
         recyclerView.setAdapter(adaptadorLista);
     }
 
@@ -37,7 +37,7 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
         personList = new ArrayList<>();
 
         Usuario u1 = new Usuario();
-        u1.setProfesion("Solicitó: Jardinera");
+        u1.setProfesion("Solicitó: Profesor de Matemática");
         u1.setResourceId(R.drawable.rostro1);
         u1.setPrecio("Estatus: Pendiente");
         u1.setDescripcion("Fecha requerida: 12/12/2017 ; Horario requerido: 10 AM  " +
@@ -45,11 +45,11 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
         personList.add(u1);
 
         Usuario u2 = new Usuario();
-        u2.setProfesion("Solicitó: Limpieza");
+        u2.setProfesion("Solicitó: Jardinera");
         u2.setResourceId(R.drawable.rostro1);
         u2.setPrecio("Estatus: Atendido");
         u2.setDescripcion("Fecha requerida: 25/12/2017 ; Horario requerido: 9 AM  " +
-                "Decripción del servicio: Necesito Jardinero");
+                "Decripción del servicio: Necesito Jardinera");
         personList.add(u2);
 
         Usuario u3 = new Usuario();
@@ -63,7 +63,7 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
 
         Usuario u4 = new Usuario();
 
-        u4.setProfesion("Solicitó: Cocinera");
+        u4.setProfesion("Solicitó: Conductor");
         u4.setResourceId(R.drawable.rostro1);
         u4.setPrecio("Estatu: Cancelado");
         u4.setDescripcion("Fecha requerida:19/12/2017 ; Horario requerido: 17 PM  " +
@@ -76,64 +76,13 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
         u5.setResourceId(R.drawable.rostro1);
         u5.setPrecio("Esatus: Cancelado");
         u5.setDescripcion("Fecha requerida:21/12/2017 ; Horario requerido: 19 PM  " +
-                "Decripción del servicio: Necesito un Jardinero");
+                "Decripción del servicio: Necesito un Jardinera");
         personList.add(u5);
     }
 
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu1, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent i;
-        switch (item.getItemId()) {
-            case R.id.action_perfiles:
-                i = new Intent(this, ListadoPerfilesActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-            case R.id.crear_demandas:
-
-                i = new Intent(this,ListadoCrearDemandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
-            case R.id.action_demandas:
-                i = new Intent(this, Demandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
-            case R.id.action_perfil:
-                i = new Intent(this, Perfil.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
-            case R.id.action_salir:
-                finish();
-                i = new Intent(Intent.ACTION_MAIN);
-                i.addCategory(Intent.CATEGORY_HOME);
-                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(i);
-                return true;
-
-            case R.id.action_settings:
-                i = new Intent(this, RegistroDatosPersonales.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
     //=========================================================
 
     @Override
