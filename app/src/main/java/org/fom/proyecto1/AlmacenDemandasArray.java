@@ -12,9 +12,10 @@ public class AlmacenDemandasArray implements AlmacenDemandas {
 
     public AlmacenDemandasArray() {
         puntuaciones = new Vector<String>();
-        puntuaciones.add("1 Pepito Domingez");
-        puntuaciones.add("2 Pedro Martinez");
-        puntuaciones.add("3 Paco Pérez");
+        puntuaciones.add("1 CLASES DE INFORMÁTICA(por Luis)");
+        puntuaciones.add("2 CLASES DE INGLÉS (por Pedro Martínez)");
+        puntuaciones.add("3 CLASES DE INGLÉS (por Ana Pérez)");
+        puntuaciones.add("4 CLASES DE JARDINERÍA (por Paco Pérez)");
     }
 
     @Override

@@ -187,6 +187,7 @@
                 android:background="@drawable/ripplereg"
                 android:elevation="2dp"
                 android:text="@string/tramitar_pago"
+                android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -17,9 +17,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/colorcreardemandas"
-            android:layout_weight="0.5">
+            android:layout_weight="0.5"
+            android:background="@color/colorperfiles"
+            android:orientation="vertical">
 
 
             <ImageView
@@ -35,20 +35,20 @@
                 android:id="@+id/nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/foto_principal"
-                android:textStyle="bold"/>
+                app:layout_constraintTop_toBottomOf="@id/foto_principal" />
 
             <TextView
                 android:id="@+id/profesion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:text="Jardinero"
-                android:textColor="@color/fb"
+                android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="10dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/nombre" />
@@ -75,9 +75,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/label_descripcion" />
 
 
-
-
-
         </LinearLayout>
 
 
@@ -97,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="21dp"
-                android:text="Completar Formulario de servicio:"
+                android:text="Completar datos del servicio:"
                 android:ems="20"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -173,16 +170,20 @@
 
 
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_marginBottom="46dp"
-                android:background="@color/colorcreardemandas"
+                android:background="@drawable/ripplereg"
+                android:elevation="2dp"
+                android:onClick="demandaCreada"
                 android:text="Crear Demanda"
+                android:textAllCaps="false"
+                android:textColor="@color/textWhite"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                android:layout_gravity="center"
-                android:onClick="demandaCreada"/>
+                app:layout_constraintRight_toRightOf="parent" />
 
 
 

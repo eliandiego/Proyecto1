@@ -48,4 +48,14 @@ public class DemandasActivity extends AppCompatActivity implements DemandaItemCl
 
         startActivity(new Intent(this, AmpliarInfoActivity.class));
     }
+
+
+    public void masinfo(View view) {
+
+        startActivity(new Intent(this, AmpliarInfoActivity.class));
+    }
+    public void meinteresa(View view) {
+
+        startActivity(new Intent(this, EnvioRespuestaPersonal.class));
+    }
 }

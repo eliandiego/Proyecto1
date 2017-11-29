@@ -28,7 +28,8 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        AdaptadorListaPerfiles adaptadorLista = new AdaptadorListaPerfiles(this, personList, this);
+        AdaptadorListaPerfiles adaptadorLista =
+                new AdaptadorListaPerfiles(this, personList, this);
         recyclerView.setAdapter(adaptadorLista);
     }
 
@@ -36,51 +37,37 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
         personList = new ArrayList<>();
 
-        Usuario u1 = new Usuario();
-        u1.setProfesion("Personal de limpieza");
-        u1.setResourceId(R.drawable.cleaner);
-        u1.setDescripcion("Se ocupa de la limpieza y mantenimiento de inmuebles. " +
-                "Para ello, emplea los productos y la maquinarias más adecuados y respeta las normas de utilización. ");
-        personList.add(u1);
+        Usuario u5 = new Usuario();
+        u5.setProfesion("Un Profesora de Matemáticas");
+        u5.setResourceId(R.drawable.profesora);
+        u5.setDescripcion("");
+        personList.add(u5);
 
-        Usuario u2 = new Usuario();
-        u2.setProfesion("Jardinera");
-        u2.setResourceId(R.drawable.gardener);
-        u2.setDescripcion("Se dedica al cuidado de plantas como flores, arbustos, árboles y césped. " +
-                "Pueden trabajar en un parque, reserva natural, parque público o privado, en rotondas de carretera, en campos de deportes," +
-                " o en áreas verdes de edificios de oficinas de, por ejemplo.");
-        personList.add(u2);
 
         Usuario u3 = new Usuario();
-
-        u3.setProfesion("Conductor");
+        u3.setProfesion("Un  Profesor de Conducción");
         u3.setResourceId(R.drawable.driver);
-        u3.setDescripcion("Su función consiste en trasladar a las personalidades o visitantes comerciales o industriales" +
-                " de una empresa desde el punto de llegada, por ejemplo, el aeropuerto o estación de trenes, hasta el lugar de destino, " +
-                "por ejemplo, las instalaciones de la compañía. El chófer espera a sus clientes en un lugar acordado");
+        u3.setDescripcion("");
         personList.add(u3);
 
         Usuario u4 = new Usuario();
-
-        u4.setProfesion("Cocinero");
+        u4.setProfesion("Un Profesor de Cocina");
         u4.setResourceId(R.drawable.cocinero);
-        u4.setDescripcion("Conoce con propiedad los productos, la administración, la contabilidad, el derecho, la nutrición, " +
-                "la enología, los costeos, la química, la historia y la geografía, entre otros muchos elementos. ");
+        u4.setDescripcion("");
         personList.add(u4);
 
-        Usuario u5 = new Usuario();
+               Usuario u2 = new Usuario();
+        u2.setProfesion("Un Profesor de Jardinería");
+        u2.setResourceId(R.drawable.gardener);
+        u2.setDescripcion("");
+        personList.add(u2);
+        Usuario u1 = new Usuario();
 
-        u5.setProfesion("Profesora de Matemática");
-        u5.setResourceId(R.drawable.profesora);
-        u5.setDescripcion("La profesora trabaja a medio tiempo. En sus ratos libres enseña matemáticas a personas particulares. " +
-                "La profesora conoce muchas áreas como Algebra y Aritmética");
-        personList.add(u5);
+        u1.setProfesion("Un Especialista mantenimiento");
+        u1.setResourceId(R.drawable.cleaner);
+        u1.setDescripcion("");
+        personList.add(u1);
     }
-
-
-
-
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();

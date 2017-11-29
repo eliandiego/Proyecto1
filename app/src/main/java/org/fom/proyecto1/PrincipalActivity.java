@@ -94,7 +94,7 @@ public class PrincipalActivity extends AppCompatActivity {
                 ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
-    public void lanzarDemandas(View view) {
+    public void lanzarCrearDemanda(View view) {
         Intent i = new Intent(this, ListadoCrearDemandas.class);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
@@ -104,9 +104,9 @@ public class PrincipalActivity extends AppCompatActivity {
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
-    public void lanzarPuntuaciones(View view) {
+    public void lanzarVerDemandas(View view) {
 
-        Intent i = new Intent(this, ListadoVerDemandas.class);
+        Intent i = new Intent(this, DemandasActivity.class);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 }//fin clase

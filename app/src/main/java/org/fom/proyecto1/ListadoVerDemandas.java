@@ -41,7 +41,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
         u1.setResourceId(R.drawable.rostro1);
         u1.setPrecio("Ver detalle");
         u1.setDescripcion("Fecha requerida: 12/12/2017 ; Horario requerido: 10 AM  " +
-                "Decripción del servicio: Necesito clases de matemáticas referente a trigonometría ");
+                "Decripción del servicio: Necesito clases de matemáticas ");
         personList.add(u1);
 
         Usuario u2 = new Usuario();
@@ -61,7 +61,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
                 "Decripción del servicio: Necesito un conductor");
         personList.add(u3);
 
-        Usuario u4 = new Usuario();
+        /*   Usuario u4 = new Usuario();
 
         u4.setProfesion("Luis");
         u4.setResourceId(R.drawable.rostro4);
@@ -77,7 +77,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
         u5.setPrecio("Ver detalle");
         u5.setDescripcion("Fecha requerida:21/12/2017 ; Horario requerido: 19 PM  " +
                 "Decripción del servicio: Necesito un Jardinero");
-        personList.add(u5);
+        personList.add(u5);*/
     }
 
 

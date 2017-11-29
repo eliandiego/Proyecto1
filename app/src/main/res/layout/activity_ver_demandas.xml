@@ -38,18 +38,18 @@
                 app:layout_constraintTop_toBottomOf="@id/foto_principal"
                 android:textStyle="bold"/>
 
-            <TextView
-                android:id="@+id/profesion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Jardinero"
-                android:textColor="@color/fb"
-                android:textSize="20sp"
-                android:layout_marginLeft="15dp"
-                android:textStyle="bold"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/nombre" />
+        <TextView
+            android:id="@+id/profesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Jardinero"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nombre" />
 
 
 
@@ -74,17 +74,28 @@
         android:orientation="vertical"       >
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/ripplereg"
+            android:elevation="2dp"
+            android:onClick="aceptar"
             android:text="Aceptar"
-            android:onClick="aceptar"/>
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/pago"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripplereg"
+            android:elevation="2dp"
+            android:onClick="solicitarInformacion"
             android:text="Solicitar Información"
-            android:onClick="solicitarInformacion"/>
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite"
+            android:textStyle="bold" />
 
 
 

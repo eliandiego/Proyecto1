@@ -14,14 +14,19 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Respuesta realizada por el demandante "
+            android:hint="RESPUESTA POR PARTE DEL DEMANDANTE "
             android:layout_margin="20dp"/>
+
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enviar"
             android:layout_margin="20dp"
-            android:onClick="respuestaEnviada"/>
+            android:background="@drawable/ripplereg"
+            android:elevation="2dp"
+            android:onClick="respuestaEnviada"
+            android:text="Enviar"
+            android:textAllCaps="false"
+            android:textColor="@color/textWhite" />
 
 
 

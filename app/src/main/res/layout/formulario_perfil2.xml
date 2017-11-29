@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -13,6 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="25dp"
             android:orientation="vertical">
 
             <TextView
@@ -20,17 +22,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
-                android:text="MATERIA REQUERIDA PARA FORMACION:"
+                android:text="GESTIONA TU PERFIL DE FORMADOR:"
                 android:textAlignment="center"
+                android:textColor="@color/txtdemandas"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="45dp"
                 tools:layout_editor_absoluteY="67dp" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:text="Nombre:" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colordemandas"
+                android:orientation="vertical">
 
                 <RadioButton
                     android:id="@+id/radioButton5"
@@ -48,9 +65,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/radioButton5"
                     android:layout_alignBottom="@+id/radioButton5"
-                    android:layout_marginStart="12dp"
+                    android:layout_marginStart="0dp"
                     android:layout_toEndOf="@+id/radioButton8"
                     android:layout_weight="1"
+                    android:checked="true"
                     android:text="Informática" />
 
                 <RadioButton
@@ -61,7 +79,8 @@
                     android:layout_alignBottom="@+id/radioButton9"
                     android:layout_alignParentStart="true"
                     android:layout_weight="1"
-                    android:text="Francés" />
+
+                    android:text="Conducción" />
 
                 <RadioButton
                     android:id="@+id/radioButton7"
@@ -69,10 +88,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/radioButton6"
                     android:layout_alignBottom="@+id/radioButton6"
-                    android:layout_marginStart="14dp"
+                    android:layout_marginStart="0dp"
                     android:layout_toEndOf="@+id/radioButton6"
                     android:layout_weight="1"
-                    android:text="Física" />
+                    android:text="Jardinería" />
 
             </LinearLayout>
 
@@ -82,9 +101,9 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/textView8"
                 android:layout_below="@+id/editText7"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="0dp"
                 android:layout_weight="1"
-                android:text="Servicio que demanda:" />
+                android:text="LOCALIDAD:" />
 
             <EditText
                 android:id="@+id/editText5"
@@ -92,9 +111,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/radioButton6"
                 android:layout_below="@+id/textView6"
-                android:layout_marginTop="14dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
-                android:inputType="date" />
+                android:inputType="text"
+                android:text="VALENCIA" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -102,8 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/radioButton5"
                 android:layout_below="@+id/radioButton8"
-                android:layout_marginTop="21dp"
-                android:text="Fecha a realizar:" />
+                android:layout_marginTop="5dp"
+                android:text="Precio/hora:" />
 
             <EditText
                 android:id="@+id/editText6"
@@ -111,9 +131,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/editText5"
                 android:layout_below="@+id/textView7"
-                android:layout_marginTop="26dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
-                android:inputType="time" />
+                android:inputType="text"
+                android:text="20€/hora" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -121,58 +142,69 @@
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/textView6"
                 android:layout_below="@+id/editText5"
-                android:layout_marginTop="21dp"
-                android:text="Horario requerido:" />
+                android:layout_marginTop="5dp"
+                android:text="Descripción del servicio ofertado:" />
 
             <EditText
                 android:id="@+id/editText7"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/editText6"
                 android:layout_below="@+id/editText6"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="0dp"
                 android:ems="10"
-                android:inputType="numberDecimal" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/textView7"
-                android:layout_below="@+id/editText6"
-                android:layout_marginTop="14dp"
-                android:text="Precio referencial:" />
-
-            <EditText
-                android:id="@+id/editText8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_toStartOf="@+id/radioButton7"
-                android:ems="10"
-                android:inputType="textMultiLine" />
+                android:inputType="textMultiLine"
+                android:text="Clases de informática"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
+                android:id="@+id/button1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignTop="@+id/textView9"
-                android:layout_marginEnd="22dp"
                 android:background="@drawable/ripplereg"
                 android:elevation="2dp"
-                android:text="Enviar"
+                android:text="Añadir"
                 android:textAllCaps="false"
                 android:textColor="@color/textWhite"
-                android:textStyle="bold" />
-        </LinearLayout>
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripplereg"
+                android:elevation="2dp"
+                android:text="Modificar"
+                android:textAllCaps="false"
+                android:textColor="@color/textWhite"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
+                app:layout_constraintStart_toEndOf="@+id/button1" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripplereg"
+                android:elevation="2dp"
+                android:text="Eliminar"
+                android:textAllCaps="false"
+                android:textColor="@color/textWhite"
+                android:textStyle="bold"
+                app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/button2" />
+        </android.support.constraint.ConstraintLayout>
 
     </LinearLayout>
 

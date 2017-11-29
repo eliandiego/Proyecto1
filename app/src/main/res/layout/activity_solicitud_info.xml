@@ -76,12 +76,17 @@
 
     <Button
         android:id="@+id/btn_solicitar_info"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="25dp"
+        android:background="@drawable/ripplereg"
+        android:elevation="2dp"
         android:text="@string/solicitar_info"
+        android:textAllCaps="false"
+        android:textColor="@color/textWhite"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etx_info" />
