@@ -28,8 +28,8 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
         recyclerView = findViewById(R.id.lista);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //AdaptadorLista adaptadorLista = new AdaptadorLista(this, personList, this);
-        //recyclerView.setAdapter(adaptadorLista);
+        AdaptadorListaPerfiles adaptadorLista = new AdaptadorListaPerfiles(this, personList, this);
+        recyclerView.setAdapter(adaptadorLista);
     }
 
     private void llenardatos() {
@@ -39,7 +39,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
         Usuario u1 = new Usuario();
         u1.setProfesion("José");
         u1.setResourceId(R.drawable.rostro1);
-        u1.setPrecio("Estatus: Pendiente");
+        u1.setPrecio("Ver detalle");
         u1.setDescripcion("Fecha requerida: 12/12/2017 ; Horario requerido: 10 AM  " +
                 "Decripción del servicio: Necesito clases de matemáticas referente a trigonometría ");
         personList.add(u1);
@@ -47,7 +47,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
         Usuario u2 = new Usuario();
         u2.setProfesion("María");
         u2.setResourceId(R.drawable.rostro2);
-        u2.setPrecio("Estatus: Atendido");
+        u2.setPrecio("Ver detalle");
         u2.setDescripcion("Fecha requerida: 25/12/2017 ; Horario requerido: 9 AM  " +
                 "Decripción del servicio: Necesito Jardinero");
         personList.add(u2);
@@ -56,7 +56,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
         u3.setProfesion("Pedro");
         u3.setResourceId(R.drawable.rostro3);
-        u3.setPrecio("Estatus: En Proceso");
+        u3.setPrecio("Ver Detalle");
         u3.setDescripcion("Fecha requerida:31/12/2017 ; Horario requerido: 14 PM  " +
                 "Decripción del servicio: Necesito un conductor");
         personList.add(u3);
@@ -65,7 +65,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
         u4.setProfesion("Luis");
         u4.setResourceId(R.drawable.rostro4);
-        u4.setPrecio("Estatu: En Proceso");
+        u4.setPrecio("Ver Detalle");
         u4.setDescripcion("Fecha requerida:19/12/2017 ; Horario requerido: 17 PM  " +
                 "Decripción del servicio: Necesito un conductor");
         personList.add(u4);
@@ -74,7 +74,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
         u5.setProfesion("Juan");
         u5.setResourceId(R.drawable.rostro5);
-        u5.setPrecio("Esatus: Atendido");
+        u5.setPrecio("Ver detalle");
         u5.setDescripcion("Fecha requerida:21/12/2017 ; Horario requerido: 19 PM  " +
                 "Decripción del servicio: Necesito un Jardinero");
         personList.add(u5);
@@ -138,7 +138,7 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
     @Override
     public void onClickListener(Usuario usuario) {
 
-        Intent intent = new Intent(this, DetalleVerDemanda.class);
+        Intent intent = new Intent(this, DetalleVerDemandas.class);
         intent.putExtra("usuario", usuario);
         startActivity(intent);
     }

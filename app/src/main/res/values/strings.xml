@@ -98,4 +98,5 @@
     <string name="servicio_cancelado">Servicio cancelado correctamente</string>
     <string name="respuesta_dada">Respuesta enviada correctamente</string>
     <string name="demanda_creada">Demanda creada correctamente</string>
+    <string name="servicio_aceptado">Servicio Aceptado correctamente</string>
 </resources>

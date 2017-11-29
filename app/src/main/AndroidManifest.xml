@@ -60,7 +60,8 @@
             android:label="Qué Necesitas?"   />
         <activity android:name=".DetalleCrearDemanda"
             android:label="Crear Demanda" />
-        <activity android:name=".ListadoVerDemandas" />
+        <activity android:name=".ListadoVerDemandas"
+            android:label="Demandas" />
         <activity android:name=".DetalleVerDemanda"
             android:label="Mi Demanda" />
         <activity android:name=".ListadoVerMisDemandas"
@@ -69,6 +70,8 @@
             android:label="Consulta" />
         <activity android:name=".DetalleRespuesta"
             android:label="Respuesta" />
+        <activity android:name=".DetalleVerDemandas"
+            android:label="Demandas" />
         <!--otras-->
     </application>
 
