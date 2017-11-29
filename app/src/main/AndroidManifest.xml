@@ -52,7 +52,8 @@
             android:name=".DemandasActivity"
             android:theme="@style/temasinactionbar"></activity>
         <!--tema AppTeme-->
-        <activity android:name=".Perfil"></activity>
+        <activity android:name=".Perfil"
+            android:label="Editar Perfil"/>
         <activity
             android:name=".EnvioRespuestaPersonal"
             android:label="@string/tit_envio_respuesta" />
@@ -72,6 +73,10 @@
             android:label="Respuesta" />
         <activity android:name=".DetalleVerDemandas"
             android:label="Demandas" />
+        <activity android:name=".ListadoGestionPerfilesActivity"
+            android:label="Mi Perfil" />
+        <activity android:name=".DetalleMiPerfilActivity"
+            android:label="Mi Perfil" />
         <!--otras-->
     </application>
 

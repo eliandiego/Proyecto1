@@ -100,7 +100,7 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void lanzarPerfil(View view) {
-        Intent i = new Intent(this, Perfil.class);
+        Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
