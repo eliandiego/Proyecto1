@@ -99,4 +99,7 @@
     <string name="respuesta_dada">Respuesta enviada correctamente</string>
     <string name="demanda_creada">Demanda creada correctamente</string>
     <string name="servicio_aceptado">Servicio Aceptado correctamente</string>
+    <string name="guardar_perfil">Perfil Guardado correctamente</string>
+    <string name="cancelar_perfil">Cancelado correctamente</string>
+    <string name="eliminar_perfil">Perfil Eliminado</string>
 </resources>

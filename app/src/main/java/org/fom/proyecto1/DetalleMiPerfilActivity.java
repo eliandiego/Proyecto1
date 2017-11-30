@@ -55,6 +55,8 @@ public class DetalleMiPerfilActivity extends AppCompatActivity implements View.O
             case R.id.btn_contactar:
                 contactarServicio();
                 break;
+
+
             default:
 
         }
@@ -68,7 +70,19 @@ public class DetalleMiPerfilActivity extends AppCompatActivity implements View.O
 
         startActivity(intent);
 
-        Toast.makeText(this, "Se ha enviado", Toast.LENGTH_SHORT).show();
+
+        finish();
+    }
+
+    public void eliminarPerfil(View v) {
+
+        Toast.makeText(this, getResources().getString(R.string.eliminar_perfil), Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, PrincipalActivity.class);
+
+        startActivity(intent);
+
+
         finish();
     }
 }
