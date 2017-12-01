@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView2m"
+                android:id="@+id/tv_tit_gestion_perfil"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView"
@@ -33,28 +33,28 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/rb_ingles"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/textView2m"
+                    android:layout_below="@+id/tv_tit_gestion_perfil"
                     android:layout_marginTop="0dp"
                     android:layout_weight="1"
                     android:text="Inglés" />
 
                 <RadioButton
-                    android:id="@+id/radioButton6"
+                    android:id="@+id/rb_informatica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/radioButton5"
-                    android:layout_alignBottom="@+id/radioButton5"
+                    android:layout_alignBaseline="@+id/rb_ingles"
+                    android:layout_alignBottom="@+id/rb_ingles"
                     android:layout_marginStart="12dp"
-                    android:layout_toEndOf="@+id/radioButton8"
+                    android:layout_toEndOf="@+id/rb_conduccion"
                     android:layout_weight="1"
                     android:text="Informática" />
 
                 <RadioButton
-                    android:id="@+id/radioButton8"
+                    android:id="@+id/rb_conduccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/radioButton9"
@@ -64,13 +64,13 @@
                     android:text="Francés" />
 
                 <RadioButton
-                    android:id="@+id/radioButton7"
+                    android:id="@+id/rb_jardineria"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBaseline="@+id/radioButton6"
-                    android:layout_alignBottom="@+id/radioButton6"
+                    android:layout_alignBaseline="@+id/rb_informatica"
+                    android:layout_alignBottom="@+id/rb_informatica"
                     android:layout_marginStart="14dp"
-                    android:layout_toEndOf="@+id/radioButton6"
+                    android:layout_toEndOf="@+id/rb_informatica"
                     android:layout_weight="1"
                     android:text="Física" />
 
@@ -81,16 +81,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/textView8"
-                android:layout_below="@+id/editText7"
+                android:layout_below="@+id/et_detalle_servicio"
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:text="Servicio que demanda:" />
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/et_localidad"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/radioButton6"
+                android:layout_alignEnd="@+id/rb_informatica"
                 android:layout_below="@+id/textView6"
                 android:layout_marginTop="14dp"
                 android:ems="10"
@@ -100,16 +100,16 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/radioButton5"
-                android:layout_below="@+id/radioButton8"
+                android:layout_alignEnd="@+id/rb_ingles"
+                android:layout_below="@+id/rb_conduccion"
                 android:layout_marginTop="21dp"
                 android:text="Fecha a realizar:" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/et_precio_hora"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/editText5"
+                android:layout_alignStart="@+id/et_localidad"
                 android:layout_below="@+id/textView7"
                 android:layout_marginTop="26dp"
                 android:ems="10"
@@ -120,16 +120,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/textView6"
-                android:layout_below="@+id/editText5"
+                android:layout_below="@+id/et_localidad"
                 android:layout_marginTop="21dp"
                 android:text="Horario requerido:" />
 
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/et_detalle_servicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignEnd="@+id/editText6"
-                android:layout_below="@+id/editText6"
+                android:layout_alignEnd="@+id/et_precio_hora"
+                android:layout_below="@+id/et_precio_hora"
                 android:layout_marginTop="45dp"
                 android:ems="10"
                 android:inputType="numberDecimal" />
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignStart="@+id/textView7"
-                android:layout_below="@+id/editText6"
+                android:layout_below="@+id/et_precio_hora"
                 android:layout_marginTop="14dp"
                 android:text="Precio referencial:" />
 
@@ -148,7 +148,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_toStartOf="@+id/radioButton7"
+                android:layout_toStartOf="@+id/rb_jardineria"
                 android:ems="10"
                 android:inputType="textMultiLine" />
 

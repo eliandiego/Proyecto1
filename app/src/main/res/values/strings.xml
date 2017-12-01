@@ -99,7 +99,17 @@
     <string name="respuesta_dada">Respuesta enviada correctamente</string>
     <string name="demanda_creada">Demanda creada correctamente</string>
     <string name="servicio_aceptado">Servicio Aceptado correctamente</string>
-    <string name="guardar_perfil">Perfil Guardado correctamente</string>
-    <string name="cancelar_perfil">Cancelado correctamente</string>
-    <string name="eliminar_perfil">Perfil Eliminado</string>
+    <!-- GESTIÓN DE PERFILES-->
+    <string name="tit_gestion_perfil">EDICION DE PERFIL</string>
+    <string name="guardar_perfil">Perfil guardado correctamente</string>
+    <string name="cancelar_perfil">Cambios cancelados</string>
+    <string name="eliminar_perfil">Perfil eliminado correctamente</string>
+    <string name="ingles">Inglés</string>
+    <string name="informatica">Informática</string>
+    <string name="conduccion">Conducción</string>
+    <string name="jardineria">Jardinería</string>
+    <string name="modificar">Modificar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="nuevo_perfil">NUEVO PERFIL</string>
+    <string name="cancelar">Cancelar</string>
 </resources>

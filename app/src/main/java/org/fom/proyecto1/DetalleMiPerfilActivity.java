@@ -67,8 +67,9 @@ public class DetalleMiPerfilActivity extends AppCompatActivity implements View.O
 
 
         Intent intent = new Intent(this, Perfil.class);
-
+        intent.putExtra("add",false);
         startActivity(intent);
+
 
 
         finish();

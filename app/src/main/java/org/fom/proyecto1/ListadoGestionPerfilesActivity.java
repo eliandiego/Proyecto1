@@ -1,10 +1,15 @@
 package org.fom.proyecto1;
 
+import android.app.ActivityOptions;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +23,18 @@ public class ListadoGestionPerfilesActivity extends AppCompatActivity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_mis_perfiles);
+        setContentView(R.layout.contenedor_mis_perfiles);
+        //setContentView(R.layout.activity_main_mis_perfiles);
+
+
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            public void onClick(View view) {
+                addPerfil(null);
+            }
+        });
+
 
         llenardatos();
 
@@ -60,5 +76,12 @@ public class ListadoGestionPerfilesActivity extends AppCompatActivity implements
         Intent intent = new Intent(this, DetalleMiPerfilActivity.class);
         intent.putExtra("usuario", usuario);
         startActivity(intent);
+    }
+
+    public void addPerfil(View view){
+        Intent i = new Intent(this, Perfil.class);
+        i.putExtra("add",true);
+        startActivity(i);
+
     }
 }

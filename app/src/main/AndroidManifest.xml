@@ -47,7 +47,7 @@
             android:theme="@style/temasinactionbar"></activity>
         <!--tema AppTeme-->
         <activity android:name=".Perfil"
-            android:label="Editar Perfil"/>
+            android:label="Perfil del Formador"/><!-- esto decía antes Editar Perfil -->
         <activity
             android:name=".EnvioRespuestaPersonal"
             android:label="@string/tit_envio_respuesta" />
@@ -68,7 +68,7 @@
         <activity android:name=".DetalleVerDemandas"
             android:label="Demandas" />
         <activity android:name=".ListadoGestionPerfilesActivity"
-            android:label="Mi Perfil" />
+            android:label="Mis Perfiles" />
         <activity android:name=".DetalleMiPerfilActivity"
             android:label="Mi Perfil" />
         <!--otras-->
