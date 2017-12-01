@@ -4,7 +4,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "org.fom.proyecto1"
+        applicationId "org.fisk.findteacher.cursos.cerca"
         minSdkVersion 22
         targetSdkVersion 26
         versionCode 1

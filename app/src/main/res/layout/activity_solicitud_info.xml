@@ -12,7 +12,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="8dp"
-    tools:context="org.fom.proyecto1.AmpliarInfoActivity">
+    tools:context="org.fisk.findteacher.AmpliarInfoActivity">
 
     <EditText
         android:id="@+id/etx_nombre"
