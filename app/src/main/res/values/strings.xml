@@ -112,4 +112,7 @@
     <string name="eliminar">Eliminar</string>
     <string name="nuevo_perfil">NUEVO PERFIL</string>
     <string name="cancelar">Cancelar</string>
+    <string name="comentario_uno">Gracias por el trabajo realizado. Les recomiendo que utilizen la aplicación, es muy buena.</string>
+    <string name="comentario_dos">Hasta ahora, es el mejor formador que he encontrado.</string>
+    <string name="comentario_tres">Excelente aplicación. Los servicios prestados han mejorado considerablemente. Espero continúen de esa manera.</string>
 </resources>
