@@ -55,24 +55,24 @@ public class ListadoGestionPerfilesActivity extends AppCompatActivity implements
 
         personList = new ArrayList<>();
 
-        Usuario u1 = new Usuario();
-        u1.setName("Fortu Pérez");
-        u1.setProfesion("Personal de limpieza");
-        u1.setResourceId(R.drawable.cleaner);
-        u1.setPrecio("Desde $20");
-        u1.setDescripcion("Se ocupa de la limpieza y mantenimiento de inmuebles. " +
-                "Para ello, emplea los productos y la maquinarias más adecuados y respeta las normas de utilización. ");
-        personList.add(u1);
+        Usuario u5 = new Usuario();
+        u5.setName("Angélica López");
+        u5.setProfesion("Profesora de Matemáticas");
+        u5.setResourceId(R.drawable.profesora);
+        u5.setPrecio("Desde $15/hora");
+        u5.setDescripcion("La profesora trabaja a medio tiempo. En sus ratos libres enseña matemáticas a personas particulares. " +
+                "La profesora conoce muchas áreas como Algebra y Aritmética");
+        personList.add(u5);
+        Usuario u3 = new Usuario();
+        u3.setName("Daniel Salinas");
+        u3.setProfesion("Profesor Conducción");
+        u3.setResourceId(R.drawable.driver);
+        u3.setPrecio("Desde $10/hora");
+        u3.setDescripcion("Su función consiste en trasladar a las personalidades o visitantes comerciales o industriales" +
+                " de una empresa desde el punto de llegada, por ejemplo, el aeropuerto o estación de trenes, hasta el lugar de destino.");
+        personList.add(u3);
 
-        Usuario u2 = new Usuario();
-        u2.setName("Fortu Pérez");
-        u2.setProfesion("Jardinera");
-        u2.setResourceId(R.drawable.gardener);
-        u2.setPrecio("Desde $15");
-        u2.setDescripcion("Se dedica al cuidado de plantas como flores, arbustos, árboles y césped. " +
-                "Pueden trabajar en un parque, reserva natural, parque público o privado, en rotondas de carretera, en campos de deportes," +
-                " o en áreas verdes de edificios de oficinas de, por ejemplo.");
-        personList.add(u2);
+
 
 
     }

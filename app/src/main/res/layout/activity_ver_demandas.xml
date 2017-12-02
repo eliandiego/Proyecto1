@@ -11,12 +11,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
 
-        android:orientation="vertical">
-
+            android:layout_margin="8dp"
+            android:orientation="vertical">
 
 
             <ImageView
@@ -33,40 +33,38 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
+                android:textStyle="bold"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/foto_principal"
-                android:textStyle="bold"/>
+                app:layout_constraintTop_toBottomOf="@id/foto_principal" />
 
-        <TextView
-            android:id="@+id/profesion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:text="Jardinero"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/nombre" />
-
+            <TextView
+                android:id="@+id/profesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Jardinero"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nombre" />
 
 
             <TextView
                 android:id="@+id/txv_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="8dp"
-                android:layout_margin="10dp"
                 android:layout_marginTop="8dp"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/label_descripcion" />
 
 
-
-    </LinearLayout>
+        </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -76,6 +74,8 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
             android:background="@drawable/ripplereg"
             android:elevation="2dp"
             android:onClick="aceptar"
@@ -88,6 +88,8 @@
             android:id="@+id/pago"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/ripplereg"
             android:elevation="2dp"
