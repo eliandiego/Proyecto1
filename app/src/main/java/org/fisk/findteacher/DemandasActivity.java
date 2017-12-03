@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
@@ -23,12 +24,16 @@ public class DemandasActivity extends AppCompatActivity implements DemandaItemCl
 
         lista = findViewById(R.id.ryv_demandas);
         configurarLista();
+
+
+
     }
 
     private void configurarLista() {
 
         lista.setLayoutManager(new LinearLayoutManager(this));
-        DemandaAdapter adapter = new DemandaAdapter((new AlmacenDemandasArray()).listaPuntuaciones(1), this);
+        DemandaAdapter adapter = new DemandaAdapter((
+                new AlmacenDemandasArray()).listaPuntuaciones(1), this);
         lista.setAdapter(adapter);
     }
 

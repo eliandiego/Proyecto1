@@ -112,4 +112,7 @@
     <string name="eliminar">Eliminar</string>
     <string name="nuevo_perfil">NUEVO PERFIL</string>
     <string name="cancelar">Cancelar</string>
+    <!-- DEMAMNDAS-->
+    <string name="txtdemandas">Si eres profesor aquí tienes el listado de demandas ordenadas
+        por fecha y pendientes de ser atendidas </string>
 </resources>

@@ -45,7 +45,7 @@
             android:label="Ampliar Información" />
         <activity
             android:name="org.fisk.findteacher.DemandasActivity"
-            android:theme="@style/temasinactionbar"></activity>
+            android:label="Demandas solicitadas"/>
         <!--tema AppTeme-->
         <activity android:name="org.fisk.findteacher.Perfil"
             android:label="Perfil del Formador"/><!-- esto decía antes Editar Perfil -->
