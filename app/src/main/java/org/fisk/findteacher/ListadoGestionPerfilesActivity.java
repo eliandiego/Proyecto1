@@ -56,25 +56,22 @@ public class ListadoGestionPerfilesActivity extends AppCompatActivity implements
         personList = new ArrayList<>();
 
         Usuario u5 = new Usuario();
-        u5.setName("Angélica López");
-        u5.setProfesion("Profesora de Matemáticas");
+        u5.setName("Daniel Salinas");
+        u5.setProfesion("Profesor de Informática");
         u5.setResourceId(R.drawable.profesora);
         u5.setPrecio("Desde $15/hora");
-        u5.setDescripcion("La profesora trabaja a medio tiempo. En sus ratos libres enseña matemáticas a personas particulares. " +
-                "La profesora conoce muchas áreas como Algebra y Aritmética");
+        u5.setDescripcion("CLASES DE INFORMATICA. Imparto clases de Informática de cualquier nivel.\n" +
+                "    Desde ofimática hasta Programación. También para niños.");
         personList.add(u5);
         Usuario u3 = new Usuario();
         u3.setName("Daniel Salinas");
         u3.setProfesion("Profesor Conducción");
         u3.setResourceId(R.drawable.driver);
         u3.setPrecio("Desde $10/hora");
-        u3.setDescripcion("Su función consiste en trasladar a las personalidades o visitantes comerciales o industriales" +
-                " de una empresa desde el punto de llegada, por ejemplo, el aeropuerto o estación de trenes, hasta el lugar de destino.");
+        u3.setDescripcion("CLASES DE CONDUCCIÓN. Imparto clases de conducción de vehiculos " +
+                        "a un precio asequible. "+
+                "NO te arrepentirás de contactar conmigo.");
         personList.add(u3);
-
-
-
-
     }
 
     @Override

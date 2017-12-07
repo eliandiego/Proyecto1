@@ -33,8 +33,8 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
         personList = new ArrayList<>();
 
         Usuario u1 = new Usuario();
-        u1.setProfesion("Solicitado: Profesor de Matemática");
-        u1.setResourceId(R.drawable.fotodemandante1);
+        u1.setProfesion("Solicitado: Profesor de Matemáticas");
+        u1.setResourceId(R.drawable.fotodemandante3);
         u1.setPrecio("Estado: PENDIENTE");
         u1.setDescripcion("Fecha requerida: 12/12/2017; Horario requerido: 10 AM  " +
                 "Descripción del servicio: Necesito clases de matemáticas referente a trigonometría ");
@@ -42,7 +42,7 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
 
         Usuario u2 = new Usuario();
         u2.setProfesion("Solicitado: Jardinera");
-        u2.setResourceId(R.drawable.fotodemandante1);
+        u2.setResourceId(R.drawable.fotodemandante3);
         u2.setPrecio("EStado: ACEPTADA");
         u2.setDescripcion("Fecha requerida: 25/12/2017; Horario requerido: 9 AM  " +
                 "Descripción del servicio: Necesito Jardinero/a");
@@ -51,7 +51,7 @@ public class ListadoVerMisDemandas extends AppCompatActivity implements ItemClic
       Usuario u3 = new Usuario();
 
         u3.setProfesion("Solicitado: Conductor");
-        u3.setResourceId(R.drawable.fotodemandante1);
+        u3.setResourceId(R.drawable.fotodemandante3);
         u3.setPrecio("Estado: EN PROCESO");
         u3.setDescripcion("Fecha requerida: 31/12/2017; Horario requerido: 14 PM  " +
                 "Descripción del servicio: Necesito un conductor/a");

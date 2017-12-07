@@ -3,7 +3,7 @@
     <!-- Colores generales-->
     <color name="colorPrimaryDark">#b44c01</color>
     <color name="colorPrimary">#fd6b02</color>
-    <color name="colorAccent">#d6c2c4</color>
+    <color name="colorAccent">#f59b14</color>
 
     <!-- Colores secciones-->
     <color name="txtperfiles">#f7771f</color>
@@ -17,7 +17,7 @@
 
     <!-- Colores textos-->
     <color name="primaryTextColor">#a9a9a9</color>
-    <color name="primaryLightColor">#eab6a4</color>
+    <color name="primaryLightColor">#ea8913</color>
     <color name="textWhite">#ffffff</color>
     <color name="fb">#3b5998</color>
     <color name="fblight">#dfe3ee</color>
