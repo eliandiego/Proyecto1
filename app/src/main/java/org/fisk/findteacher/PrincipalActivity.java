@@ -23,6 +23,7 @@ public class PrincipalActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
+        new RateMyApp(this).app_launched();
     }
 
     @Override
