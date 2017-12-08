@@ -12,10 +12,15 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 import static java.lang.System.exit;
 
 public class PrincipalActivity extends AppCompatActivity {
     public static AlmacenDemandas almacen = new AlmacenDemandasArray();
+    private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +29,11 @@ public class PrincipalActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
 
-
         new RateMyApp(this).app_launched();
+        MobileAds.initialize(this, "ca-app-pub-9780467258849720~7301799432");
+        adView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("3097747E039701F659335E42352CEB71").build();
+        adView.loadAd(adRequest);
     }
 
     @Override
@@ -66,7 +74,7 @@ public class PrincipalActivity extends AppCompatActivity {
             case R.id.action_settings:
                 i = new Intent(this, RegistroDatosPersonales.class);
                 startActivity(i);
-              //  startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                //  startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -77,7 +85,7 @@ public class PrincipalActivity extends AppCompatActivity {
     public void lanzarServicios(View view) {
         Intent i = new Intent(this, ListadoPerfilesActivity.class);
         startActivity(i);
-      //  startActivity(i,                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        //  startActivity(i,                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     public void lanzarCrearDemanda(View view) {
@@ -89,7 +97,7 @@ public class PrincipalActivity extends AppCompatActivity {
     public void lanzarPerfil(View view) {
         Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
         startActivity(i);
-       // startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        // startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     public void lanzarVerDemandas(View view) {
