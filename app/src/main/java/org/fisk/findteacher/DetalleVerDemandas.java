@@ -62,8 +62,8 @@ public class DetalleVerDemandas extends AppCompatActivity {
 
             case R.id.mis_demandas:
                 i = new Intent(this, DetalleConsultaMiDemanda.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+                //startActivity(i,  ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
 

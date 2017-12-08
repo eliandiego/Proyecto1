@@ -65,7 +65,8 @@ public class RegistroActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, LoginActivity.class);
                 intent.putExtra("correo",p1.getText().toString());
                 intent.putExtra("contraseña", p2.getText().toString());
-                startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+            //    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(intent);
 
             }
 

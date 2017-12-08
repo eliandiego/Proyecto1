@@ -168,7 +168,6 @@
                 android:layout_alignTop="@+id/textView9"
                 android:layout_marginEnd="22dp"
                 android:layout_marginStart="24dp"
-                android:background="@drawable/ripplereg"
                 android:elevation="2dp"
                 android:text="Enviar"
                 android:textAllCaps="false"

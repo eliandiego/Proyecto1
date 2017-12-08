@@ -54,9 +54,9 @@
     <string name="respuesta_enviada">Respuesta enviada</string>
     <string name="nombre_destinatario">Ana López</string>
     <string name="tit_nombre_destinatario">Destinatario</string>
-    <string name="usuario_profesor">Usuario jperez</string>
+    <string name="usuario_profesor">Usuario DSalinas</string>
     <string name="tit_asunto">Demanda a la que responde</string>
-    <string name="asunto">Profesor de Matemáticas en Valencia y alrededores</string>
+    <string name="asunto">Profesor de Informática en Valencia y alrededores</string>
     <!--LAYOUT REALIZACION PAGO-->
     <string name="pago_servicio">Pago del servicio</string>
     <string name="realizacion_pago">Realización de pago</string>
@@ -87,7 +87,7 @@
 
     <string name="usuariox">Usuario analopez</string>
     <string name="tit_nombre_profesor">Nombre del profesor</string>
-    <string name="nombre_profesor">José Pérez</string>
+    <string name="nombre_profesor">Daniel Salinas</string>
     <string name="tramitar_pago">Tramitar pago</string>
 
     <!--string name="usuariox">Usuario X</string-->
@@ -100,7 +100,7 @@
     <string name="demanda_creada">Demanda creada correctamente</string>
     <string name="servicio_aceptado">Servicio Aceptado correctamente</string>
     <!-- GESTIÓN DE PERFIL-->
-    <string name="tit_gestion_perfil">GESTIÓN DE PERFIL - Paso 1/2</string>
+    <string name="tit_gestion_perfil">GESTIÓN DE PERFIL</string>
     <string name="guardar_perfil">Perfil guardado correctamente</string>
     <string name="cancelar_perfil">Cambios cancelados</string>
     <string name="eliminar_perfil">Perfil eliminado correctamente</string>
@@ -119,7 +119,9 @@
     Desde ofimática hasta Programación. También para niños. </string>
     <string name="btnsiguiente">Siguiente</string>
     <string name="nomprofe"> DANIEL SALINAS GARCÍA</string>
-    <string name="tit_gestion_perfilavanz">GESTIÓN DE PERFIL -Paso 2/2</string>
+
+    <string name="tit_gestion_perfil3">GESTIÓN DE PERFIL -Paso 1/2</string>
+    <string name="tit_gestion_perfil4">GESTIÓN DE PERFIL -Paso 2/2</string>
     <string name="titperfilavanzado">¿Por qué tendrían que escogerte?</string>
     <string name="txtperfilavanzado">Dispongo de amplia experiencia, más de 15 años.
         Si contactas conmigo no quedarás defraudado.  </string>

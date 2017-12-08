@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="24dp"
-            android:background="@drawable/ripplereg"
+            android:background="@drawable/redondo"
             android:elevation="2dp"
             android:onClick="respuestaEnviada"
             android:text="Enviar"

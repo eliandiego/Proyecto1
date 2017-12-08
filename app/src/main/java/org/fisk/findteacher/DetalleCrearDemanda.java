@@ -61,8 +61,8 @@ public class DetalleCrearDemanda extends AppCompatActivity {
 
             case R.id.mis_demandas:
                 i = new Intent(this, ListadoVerMisDemandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+              //  startActivity(i,  ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
 

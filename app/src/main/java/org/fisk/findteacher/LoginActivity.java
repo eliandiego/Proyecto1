@@ -59,9 +59,10 @@ public class LoginActivity extends AppCompatActivity {
             if (registrado != true) {
                 usuarios.add(usuario.getText().toString());
                 Intent intent = new Intent(this, PrincipalActivity.class);
-                 startActivity(intent.addFlags
-                        (Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP),
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+               //  startActivity(intent.addFlags                 (Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP),                    ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(intent.addFlags
+                        (Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
+
                 finish();
             }
         } else {

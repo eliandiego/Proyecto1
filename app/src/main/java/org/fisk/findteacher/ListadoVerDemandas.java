@@ -94,26 +94,26 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
         switch (item.getItemId()) {
             case R.id.action_perfiles:
                 i = new Intent(this, ListadoPerfilesActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+              //  startActivity(i,  ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
             case R.id.crear_demandas:
 
                 i = new Intent(this, ListadoCrearDemandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+                //startActivity(i,ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
             case R.id.action_demandas:
                 i = new Intent(this, DemandasActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+                //startActivity(i,                   ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
             case R.id.action_perfil:
                 i = new Intent(this, Perfil.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+              // startActivity(i,               ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
 
             case R.id.action_salir:
@@ -126,8 +126,8 @@ public class ListadoVerDemandas extends AppCompatActivity implements ItemClickLi
 
             case R.id.action_settings:
                 i = new Intent(this, RegistroDatosPersonales.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+               // startActivity(i,                  ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

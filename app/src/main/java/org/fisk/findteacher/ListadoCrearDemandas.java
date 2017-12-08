@@ -83,8 +83,8 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
 
             case R.id.mis_demandas:
                 i = new Intent(this, ListadoVerMisDemandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                //startActivity(i,                   ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
                 return true;
 
 

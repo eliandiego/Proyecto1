@@ -65,8 +65,8 @@ public class PrincipalActivity extends AppCompatActivity {
 
             case R.id.action_settings:
                 i = new Intent(this, RegistroDatosPersonales.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+                startActivity(i);
+              //  startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
@@ -76,23 +76,26 @@ public class PrincipalActivity extends AppCompatActivity {
     //=========================================================
     public void lanzarServicios(View view) {
         Intent i = new Intent(this, ListadoPerfilesActivity.class);
-        startActivity(i,
-                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i);
+      //  startActivity(i,                ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     public void lanzarCrearDemanda(View view) {
         Intent i = new Intent(this, ListadoCrearDemandas.class);
-        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i);
+        //startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     public void lanzarPerfil(View view) {
         Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
-        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i);
+       // startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     public void lanzarVerDemandas(View view) {
         Intent i = new Intent(this, DemandasActivity.class);
-        startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+        startActivity(i);
+        //startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
 
     void compatirTexto(String texto) {

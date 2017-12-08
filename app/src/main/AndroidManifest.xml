@@ -15,7 +15,8 @@
         <!--actividades con sin tool bar por defecto-->
         <activity
             android:name=".RegistroActivity"
-            android:theme="@style/temasinactionbar">
+
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -24,10 +25,12 @@
 
         <activity
             android:name=".PrincipalActivity"
+            android:label="findTeacher"
             android:theme="@style/temasinactionbar"></activity>
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/temasinactionbar"></activity>
+            android:label="@string/app_name"
+          ></activity>
         <!-- tema AppTeme -->
         <activity
             android:name=".RegistroDatosPersonales"
@@ -38,9 +41,9 @@
         <activity android:name=".DemandaServicios"
             android:label="Servicios de profesores"/>
         <activity android:name=".DetalleUsuarioActivity"
-            android:label="Detalle Perfil"/>
+            android:label="Detalle del formador"/>
         <activity android:name=".ListadoPerfilesActivity"
-            android:label="Listado de perfiles"/>
+            android:label="Servicios de Profesores"/>
         <activity android:name=".RespuestaActivity"
             android:label="Respuesta"/>
         <!-- otras -->
@@ -52,9 +55,9 @@
             android:label="Demandas activas"/>
         <!--tema AppTeme-->
         <activity android:name=".Perfil"
-            android:label="Perfil del formador"/>
+            android:label="Perfil del formador 1/2"/>
         <activity android:name=".PerfilAvanzadoActivity"
-            android:label="Perfil avanzado del formador"/>
+            android:label="Perfil del formador 2/2"/>
         <activity
             android:name=".EnvioRespuestaPersonal"
             android:label="@string/tit_envio_respuesta" />

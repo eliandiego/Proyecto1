@@ -32,7 +32,7 @@ public class Perfil extends AppCompatActivity {
             //b_eliminar.setVisibility(View.GONE);
             titulo.setText(getResources().getString(R.string.nuevo_perfil));
         } else {
-            titulo.setText(getResources().getString(R.string.tit_gestion_perfil));
+            titulo.setText(getResources().getString(R.string.tit_gestion_perfil3));
         }
 
       /*  //Implementación del botón de guardado del perfil

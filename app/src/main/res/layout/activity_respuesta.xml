@@ -62,7 +62,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
-        android:background="@drawable/ripplereg"
+        android:background="@drawable/redondo"
         android:elevation="4dp"
         android:text="@string/responder_respuesta"
         android:textAllCaps="false"

@@ -175,7 +175,7 @@
                 android:layout_marginBottom="0dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:background="@drawable/ripplereg"
+                android:background="@drawable/redondo"
                 android:elevation="2dp"
                 android:onClick="demandaCreada"
                 android:text="Crear Demanda"
