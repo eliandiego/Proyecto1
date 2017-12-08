@@ -10,32 +10,25 @@ import android.widget.Toast;
 
 /**
  * Created by FREDDY on 17/11/2017.
- * Modified by Isabel on 30/11/2017
- * Sonia 07/12/2017
  */
 
-public class Perfil extends AppCompatActivity {
-
-    Button b_guardar, b_eliminar, b_sig;
-    TextView titulo;
-
-
+public class PerfilAvanzadoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.formulario_perfil3);
-        //MODIFICO EL PERFIL
+        setContentView(R.layout.formulario_perfil4);
 
+   Button b_guardar, b_eliminar;
+    TextView titulo;
 
-        titulo = findViewById(R.id.tv_tit_gestion_perfil);
+     /*   titulo = findViewById(R.id.tv_tit_gestion_perfil);
         if (getIntent().getExtras().getBoolean("add") == true) {
             //b_eliminar.setVisibility(View.GONE);
             titulo.setText(getResources().getString(R.string.nuevo_perfil));
         } else {
             titulo.setText(getResources().getString(R.string.tit_gestion_perfil));
-        }
-
-      /*  //Implementación del botón de guardado del perfil
+        }*/
+        //Implementación del botón de guardado del perfil
         b_guardar = findViewById(R.id.b_guardar);
         b_guardar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
@@ -43,20 +36,11 @@ public class Perfil extends AppCompatActivity {
             }
         });
 
-
         //Implementación del botón de eliminación del perfil
         b_eliminar = findViewById(R.id.b_eliminar);
         b_eliminar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 cancelarPerfil(null);
-            }
-        });*/
-
-        //Implementación del botón de siguuiente
-        b_sig = findViewById(R.id.b_Siguiente);
-        b_sig.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                siguientePerfil(null);
             }
         });
 
@@ -66,8 +50,8 @@ public class Perfil extends AppCompatActivity {
     public void guardarPerfil(View v) {
 
         Toast.makeText(this, getResources().getString(R.string.guardar_perfil), Toast.LENGTH_SHORT).show();
-        finish(); //Finaliza la actividad actual
-       /* Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
+       finish(); //Finaliza la actividad actual
+      /*  Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
         startActivity(i);*/
 
     }
@@ -75,17 +59,9 @@ public class Perfil extends AppCompatActivity {
     public void cancelarPerfil(View v) {
 
         Toast.makeText(this, getResources().getString(R.string.cancelar_perfil), Toast.LENGTH_SHORT).show();
-        finish(); //Finaliza la actividad actual
-        /*Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
-        startActivity(i);
-        finish();*/
-    }
-    public void siguientePerfil(View v) {
-
-       // Toast.makeText(this, getResources().getString(R.string.guardar_perfil), Toast.LENGTH_SHORT).show();
         //finish(); //Finaliza la actividad actual
-        Intent i = new Intent(this, PerfilAvanzadoActivity.class);
-        startActivity(i);
+       /* Intent i = new Intent(this, ListadoGestionPerfilesActivity.class);
+        startActivity(i);*/
         finish();
     }
 

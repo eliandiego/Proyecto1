@@ -13,6 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="16dp"
             android:orientation="vertical">
 
             <TextView
@@ -166,6 +167,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignTop="@+id/textView9"
                 android:layout_marginEnd="22dp"
+                android:layout_marginStart="24dp"
                 android:background="@drawable/ripplereg"
                 android:elevation="2dp"
                 android:text="Enviar"

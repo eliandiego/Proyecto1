@@ -12,10 +12,11 @@ public class AlmacenDemandasArray implements AlmacenDemandas {
 
     public AlmacenDemandasArray() {
         puntuaciones = new Vector<String>();
-        puntuaciones.add("1 CLASES DE INFORMÁTICA(por Luis)");
-        puntuaciones.add("2 CLASES DE INGLÉS (por Pedro Martínez)");
-        puntuaciones.add("3 CLASES DE INGLÉS (por Ana Pérez)");
-        puntuaciones.add("4 CLASES DE JARDINERÍA (por Paco Pérez)");
+        puntuaciones.add("ID0843. CLASES DE INFORMÁTICA. VALENCIA. 03/12/2017.(por Ana López)");
+        puntuaciones.add("ID0845. CLASES DE INGLÉS. VALENCIA. 03/12/2017. (por Eva Anaya)");
+        puntuaciones.add("ID0841. CLASES DE INGLÉS. ALICANTE. 02/12/2017.(por Luis Pérez)");
+        puntuaciones.add("ID0838. CLASES DE JARDINERÍA. ALICANTE.01/12/2017.(por Paco Esteban)");
+        puntuaciones.add("ID0830. CLASES DE INFORMÁTICA. MADRID.01/12/2017.(por Luisa Anaya)");
     }
 
     @Override

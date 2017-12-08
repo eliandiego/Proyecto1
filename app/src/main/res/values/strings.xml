@@ -99,8 +99,8 @@
     <string name="respuesta_dada">Respuesta enviada correctamente</string>
     <string name="demanda_creada">Demanda creada correctamente</string>
     <string name="servicio_aceptado">Servicio Aceptado correctamente</string>
-    <!-- GESTIÓN DE PERFILES-->
-    <string name="tit_gestion_perfil">EDICION DE PERFIL</string>
+    <!-- GESTIÓN DE PERFIL-->
+    <string name="tit_gestion_perfil">GESTIÓN DE PERFIL - Paso 1/2</string>
     <string name="guardar_perfil">Perfil guardado correctamente</string>
     <string name="cancelar_perfil">Cambios cancelados</string>
     <string name="eliminar_perfil">Perfil eliminado correctamente</string>
@@ -108,10 +108,30 @@
     <string name="informatica">Informática</string>
     <string name="conduccion">Conducción</string>
     <string name="jardineria">Jardinería</string>
+    <string name="matematicas">Matemáticas</string>
     <string name="modificar">Modificar</string>
     <string name="eliminar">Eliminar</string>
     <string name="nuevo_perfil">NUEVO PERFIL</string>
     <string name="cancelar">Cancelar</string>
+
+    <string name="descperfil">Perfil resumen:</string>
+    <string name="txtperfil">CLASES DE INFORMATICA. Imparto clases de Informática de cualquier nivel.
+    Desde ofimática hasta Programación. También para niños. </string>
+    <string name="btnsiguiente">Siguiente</string>
+    <string name="nomprofe"> DANIEL SALINAS GARCÍA</string>
+    <string name="tit_gestion_perfilavanz">GESTIÓN DE PERFIL -Paso 2/2</string>
+    <string name="titperfilavanzado">¿Por qué tendrían que escogerte?</string>
+    <string name="txtperfilavanzado">Dispongo de amplia experiencia, más de 15 años.
+        Si contactas conmigo no quedarás defraudado.  </string>
+    <string name="titrecomendaciones">Destaca las mejores recomendaciones de tus clientes: </string>
+    <string name="recomendacion1">Excelente profesor. He aprendido mucho y lo recomiendo.
+        Gracias. ANA LÓPEZ. 07/12/2017 </string>
+    <string name="recomendacion2">Rara vez he aprendido tanto con un profesor.
+            Su dedicación es muy buena ;). ANTONIO CASTELLS. 07/12/2017 </string>
+
+    <!-- DEMAMNDAS-->
+    <string name="txtdemandas">Para los profesores que deseen atenderlas: </string>
+    <!-- PERFILES-->
     <string name="comentario_uno">Gracias por el trabajo realizado. Les recomiendo que utilizen la aplicación, es muy buena.</string>
     <string name="comentario_dos">Hasta ahora, es el mejor formador que he encontrado.</string>
     <string name="comentario_tres">Excelente aplicación. Los servicios prestados han mejorado considerablemente. Espero continúen de esa manera.</string>

@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import static java.lang.System.exit;
+
 public class PrincipalActivity extends AppCompatActivity {
     public static AlmacenDemandas almacen = new AlmacenDemandasArray();
 
@@ -19,17 +21,27 @@ public class PrincipalActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
-        //tool bar
         Toolbar toolbar = (Toolbar) findViewById(R.id.detail_toolbar);
         setSupportActionBar(toolbar);
+
 
         new RateMyApp(this).app_launched();
     }
 
     @Override
+    public void onBackPressed() {
+        finish();
+        Intent i = new Intent(Intent.ACTION_MAIN);
+        i.addCategory(Intent.CATEGORY_HOME);
+        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
+    }
+
+
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu1, menu);
+        inflater.inflate(R.menu.menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -37,31 +49,6 @@ public class PrincipalActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent i;
         switch (item.getItemId()) {
-            case R.id.action_perfiles:
-                i = new Intent(this, ListadoPerfilesActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-            case R.id.crear_demandas:
-
-                i = new Intent(this, ListadoCrearDemandas.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
-            case R.id.action_demandas:
-
-                i = new Intent(this, DemandasActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
-            case R.id.action_perfil:
-                i = new Intent(this, ListadoGestionPerfilesActivity.class);
-                startActivity(i,
-                        ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
-                return true;
-
             case R.id.action_salir:
                 finish();
                 i = new Intent(Intent.ACTION_MAIN);
@@ -81,10 +68,6 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     //=========================================================
-    private void action(int resid) {
-        Toast.makeText(this, getText(resid), Toast.LENGTH_SHORT).show();
-    }
-
     public void lanzarServicios(View view) {
         Intent i = new Intent(this, ListadoPerfilesActivity.class);
         startActivity(i,
@@ -102,7 +85,6 @@ public class PrincipalActivity extends AppCompatActivity {
     }
 
     public void lanzarVerDemandas(View view) {
-
         Intent i = new Intent(this, DemandasActivity.class);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }

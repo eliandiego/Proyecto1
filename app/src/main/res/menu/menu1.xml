@@ -23,7 +23,7 @@
     <item android:id="@+id/action_settings"
         android:title="@string/gestionarmicuenta"
         android:icon="@android:drawable/ic_menu_preferences"
-        app:showAsAction="never"/>
+        app:showAsAction="ifRoom"/>
     <item android:id="@+id/action_salir"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/salir"

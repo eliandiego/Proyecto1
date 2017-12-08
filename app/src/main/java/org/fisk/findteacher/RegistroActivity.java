@@ -66,6 +66,7 @@ public class RegistroActivity extends AppCompatActivity {
                 intent.putExtra("correo",p1.getText().toString());
                 intent.putExtra("contraseña", p2.getText().toString());
                 startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+
             }
 
         } else {

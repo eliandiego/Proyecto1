@@ -38,20 +38,20 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
         personList = new ArrayList<>();
 
         Usuario u5 = new Usuario();
-        u5.setProfesion("Un Profesora de Matemáticas");
+        u5.setProfesion("Profesor de Matemáticas");
         u5.setResourceId(R.drawable.profesora);
         u5.setDescripcion("");
         personList.add(u5);
 
 
         Usuario u3 = new Usuario();
-        u3.setProfesion("Un  Profesor de Conducción");
+        u3.setProfesion("Profesor de Conducción");
         u3.setResourceId(R.drawable.driver);
         u3.setDescripcion("");
         personList.add(u3);
 
         Usuario u4 = new Usuario();
-        u4.setProfesion("Un Profesor de Cocina");
+        u4.setProfesion("Profesor de Cocina");
         u4.setResourceId(R.drawable.cocinero);
         u4.setDescripcion("");
         personList.add(u4);
@@ -63,7 +63,7 @@ public class ListadoCrearDemandas extends AppCompatActivity implements ItemClick
         personList.add(u2);
         Usuario u1 = new Usuario();
 
-        u1.setProfesion("Un Especialista mantenimiento");
+        u1.setProfesion("Profe de mantenimiento");
         u1.setResourceId(R.drawable.cleaner);
         u1.setDescripcion("");
         personList.add(u1);

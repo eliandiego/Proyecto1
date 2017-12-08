@@ -10,7 +10,8 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
 
         <ImageView
             android:id="@+id/igv_foto"
@@ -27,9 +28,9 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@id/igv_foto"
-            app:layout_constraintTop_toTopOf="parent"
-            android:textStyle="bold"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/precio"
@@ -44,10 +45,10 @@
             android:id="@+id/txv_profesion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/igv_foto"
-            app:layout_constraintTop_toBottomOf="@id/txv_nombre"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toRightOf="@id/igv_foto"
+            app:layout_constraintTop_toBottomOf="@id/txv_nombre" />
 
 
     </android.support.constraint.ConstraintLayout>
