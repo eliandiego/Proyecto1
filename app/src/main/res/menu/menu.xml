@@ -5,11 +5,20 @@
     tools:context=".MainActivity">
     <!-- MENU -->
 
-    <item android:id="@+id/action_settings"
-        android:title="@string/gestionarmicuenta"
+    <item
+        android:id="@+id/action_settings"
         android:icon="@android:drawable/ic_menu_preferences"
-        app:showAsAction="ifRoom"/>
-    <item android:id="@+id/action_salir"
+        android:title="@string/gestionarmicuenta"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_share"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="Compartir"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_salir"
         android:icon="@android:drawable/ic_lock_power_off"
         android:title="@string/salir"
         app:showAsAction="ifRoom" />

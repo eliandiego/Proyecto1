@@ -57,6 +57,12 @@ public class PrincipalActivity extends AppCompatActivity {
                 startActivity(i);
                 return true;
 
+            case R.id.action_share:
+                compatirTexto("Encuentra un profesor cerca de ti. ---- " +
+                        "Compartido por: http://play.google.com/store/apps/details?id=" +
+                        getPackageName());
+                return true;
+
             case R.id.action_settings:
                 i = new Intent(this, RegistroDatosPersonales.class);
                 startActivity(i,
@@ -88,4 +94,12 @@ public class PrincipalActivity extends AppCompatActivity {
         Intent i = new Intent(this, DemandasActivity.class);
         startActivity(i, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
     }
+
+    void compatirTexto(String texto) {
+        Intent i = new Intent(Intent.ACTION_SEND);
+        i.setType("text/plain");
+        i.putExtra(Intent.EXTRA_TEXT, texto);
+        startActivity(Intent.createChooser(i, "Selecciona aplicación"));
+    }
+
 }//fin clase
