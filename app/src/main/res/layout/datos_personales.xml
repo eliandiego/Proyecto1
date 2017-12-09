@@ -72,15 +72,65 @@
         app:layout_constraintTop_toTopOf="@+id/pago"
         tools:layout_editor_absoluteX="0dp">
 
+        <FrameLayout
+            android:id="@+id/frame_foto"
+            android:layout_width="wrap_content"
+            android:layout_height="160dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="96dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/fotografia"
+                android:minWidth="130dp"
+                android:src="@drawable/usuario_defecto" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right">
+
+                <ImageView
+                    android:id="@+id/camara"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/camara"
+
+                    android:src="@android:drawable/ic_menu_camera" />
+
+                <ImageView
+                    android:id="@+id/galeria"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:contentDescription="@string/galeria"
+                    android:src="@android:drawable/ic_menu_gallery" />
+
+                <ImageView
+                    android:id="@+id/eliminarfoto"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/eliminar_foto"
+
+                    android:src="@android:drawable/ic_menu_close_clear_cancel" />
+            </LinearLayout>
+        </FrameLayout>
+
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_nombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="8dp"
             android:minHeight="?android:attr/actionBarSize"
             android:transitionGroup="true"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/frame_foto">
 
             <EditText
                 android:id="@+id/nombre"

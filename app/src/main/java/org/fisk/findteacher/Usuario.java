@@ -13,6 +13,19 @@ public class Usuario implements Serializable{
     int resourceId;
     String precio;
     String descripcion;
+    String foto;
+
+    public Usuario() {
+    }
+
+    public Usuario(String name, String profesion, int resourceId, String precio, String descripcion, String foto) {
+        this.name = name;
+        this.profesion = profesion;
+        this.resourceId = resourceId;
+        this.precio = precio;
+        this.descripcion = descripcion;
+        this.foto = foto;
+    }
 
     public String getNombre() {
         return name;
@@ -52,5 +65,13 @@ public class Usuario implements Serializable{
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public String getFoto() {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 }

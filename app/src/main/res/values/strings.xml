@@ -45,6 +45,15 @@
     <string name="tit_registro_datos">Usuario analopez</string>
     <string name="err_campo_vacio">Este campo es obligatorio</string>
     <string name="datos_guardados">Datos guardados correctamente</string>
+    <string name="permiso_almacenamiento">Se necesita permiso de almacenamiento para poder usar la fotografía tomada por la cámara</string>
+    <string name="error_foto_no_cargada">Foto no cargada"</string>
+    <string name="error_en_captura">Error en captura</string>
+    <string name="error_fichero_no_encontrado">Fichero/recurso no encontrado</string>
+    <string name="solicitud_permiso">Solicitud de permiso</string>
+    <string name="galeria">Galería</string>
+    <string name="fotografia">Fotografía</string>
+    <string name="camara">Cámara</string>
+    <string name="eliminar_foto">Eliminar foto</string>
     <!--LAYOUT ENVIO RESPUESTA PERSONAL-->
     <string name="tit_envio_respuesta">Envío de respuesta</string>
     <string name="nom_materia">Matemáticas</string>
@@ -61,7 +70,7 @@
     <string name="pago_servicio">Pago del servicio</string>
     <string name="realizacion_pago">Realización de pago</string>
     <string name="concepto">Concepto</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dolor nibh, fringilla sit amet elit ac, tincidunt posuere nibh.</string>
+    <string name="lorem_ipsum">Clases de repaso de matemáticas para examen final de instituto.            </string>
     <string name="detalle_servicio">Detalle del servicio prestado:</string>
     <string name="precio_hora">Precio por hora</string>
     <string name="d_precio_hora">€30 / hora</string>
