@@ -30,7 +30,7 @@ public class PrincipalActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         new RateMyApp(this).app_launched();
-        MobileAds.initialize(this, "ca-app-pub-9780467258849720~7301799432");
+        MobileAds.initialize(this, "ca-app-pub-9780467258849720~9176636818");
         adView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().addTestDevice("3097747E039701F659335E42352CEB71").build();
         adView.loadAd(adRequest);

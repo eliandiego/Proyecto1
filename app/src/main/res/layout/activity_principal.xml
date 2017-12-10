@@ -196,7 +196,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:adSize="SMART_BANNER"
-        app:adUnitId="ca-app-pub-9780467258849720/5577654228" />
+        app:adUnitId="ca-app-pub-9780467258849720/2663199353" />
 </LinearLayout>
 
 
