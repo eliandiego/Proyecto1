@@ -66,14 +66,16 @@
 
         </LinearLayout>
 
-        <LinearLayout
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="wrap_content">
 
             <Button
-                android:layout_width="match_parent"
+                android:id="@+id/button4"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
                 android:background="@drawable/redondo"
@@ -83,25 +85,30 @@
                 android:textAllCaps="false"
                 android:textColor="@color/textWhite"
                 android:textSize="14sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/pago"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/pago"
-                android:layout_width="match_parent"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="10dp"
                 android:background="@drawable/redondo"
                 android:elevation="2dp"
                 android:onClick="pagar"
                 android:text="Pago"
                 android:textAllCaps="false"
                 android:textColor="@color/textWhite"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
 
-        </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
 
 
 </LinearLayout>

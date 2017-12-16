@@ -179,7 +179,7 @@
 
             <Button
                 android:id="@+id/b_pagar"
-                android:layout_width="0dp"
+                android:layout_width="260dp"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"

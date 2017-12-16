@@ -83,7 +83,7 @@
 
     <Button
         android:id="@+id/btn_solicitar_info"
-        android:layout_width="0dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="24dp"

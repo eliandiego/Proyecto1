@@ -6,33 +6,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/textView15"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
             android:text="CONSULTA REALIZADA POR EL FORMADOR "
             android:textAlignment="center"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:layout_width="match_parent"
+            android:id="@+id/button3"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
             android:background="@drawable/redondo"
             android:elevation="2dp"
             android:onClick="respuestaDemandante"
             android:text="Responder"
             android:textAllCaps="false"
             android:textColor="@color/textWhite"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
 
-
-</LinearLayout>
+    </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

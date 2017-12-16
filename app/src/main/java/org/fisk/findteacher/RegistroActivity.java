@@ -3,6 +3,7 @@ package org.fisk.findteacher;
 // NO HAY CONTROL DE USUARIOS
 //CONTROLES: campos vacios, Mostrar contraseña, coge los datos de registro
 //REalmente con una pantalla nos podiamos registrar/logear
+
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Vector;
+
 public class RegistroActivity extends AppCompatActivity {
     public Vector<String> usuarios;
 
@@ -24,6 +26,10 @@ public class RegistroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_registro);
         usuarios = new Vector<String>();
         usuarios.add("Ana");
+
+        Toast.makeText(this,
+                "AVISO: Esta aplicación está hecha con fines didácticos, " +
+                        "y no tiene una funcionalidad completa. ", Toast.LENGTH_SHORT).show();
     }
 
     public void mostrarContraseña(View v) {
@@ -46,35 +52,32 @@ public class RegistroActivity extends AppCompatActivity {
         EditText usuario = (EditText) findViewById(R.id.usuario);
         EditText correo = (EditText) findViewById(R.id.correo);
         EditText contraseña = (EditText) findViewById(R.id.contraseña);
+        EditText contraseña2 = (EditText) findViewById(R.id.contraseña2);
         TextView mensaje = (TextView) findViewById(R.id.mensaje);
-        String u = usuario.getText().toString();
-        String c = contraseña.getText().toString();
-        String co = correo.getText().toString();
 
-        if ((u.length() != 0) && (c.length() != 0) && (co.length() != 0)) {//rellenados
-            for (int i = 0; i < usuarios.size(); i++) {
-                if (usuarios.elementAt(i) == u) {
-                    registrado = true;
-                    break;
-                }
-            }
-            if (registrado != true) {
+        String u = usuario.getText().toString();
+        String c = correo.getText().toString();
+        String pa = contraseña.getText().toString();
+        String pa2 = contraseña2.getText().toString();
+
+
+        if ((u.length() != 0) && (c.length() != 0) && (pa.length() != 0) && (pa2.length() != 0)) {//rellenados
+            if (pa.equals(pa2)) {
                 EditText p1 = (EditText) findViewById(R.id.correo);
                 EditText p2 = (EditText) findViewById(R.id.contraseña);
-                // Toast.makeText(this, "YA REGISTRADO", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(this, LoginActivity.class);
-                intent.putExtra("correo",p1.getText().toString());
+                intent.putExtra("correo", p1.getText().toString());
                 intent.putExtra("contraseña", p2.getText().toString());
-            //    startActivity(intent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
                 startActivity(intent);
-
+            } else {
+                mensaje.setText("Las contraseñas han de ser iguales");
             }
-
         } else {
-            Toast.makeText(this, "YA REGISTRADO", Toast.LENGTH_SHORT).show();
-            mensaje.setText(R.string.rellenatodos);
+                mensaje.setText(R.string.rellenatodos);
         }
+
     }
+
     public void borrarCampos(View view) {
         EditText usuario = (EditText) findViewById(R.id.usuario);
         EditText contraseña = (EditText) findViewById(R.id.contraseña);

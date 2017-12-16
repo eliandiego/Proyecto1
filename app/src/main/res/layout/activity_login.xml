@@ -78,7 +78,7 @@
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
                 android:text="@string/contraseña"
-                android:textSize="24sp" />
+                android:textSize="18sp" />
         </android.support.design.widget.TextInputLayout>
 
         <CheckBox
@@ -96,7 +96,7 @@
 
         <Button
             android:id="@+id/butt_acceder"
-            android:layout_width="0dp"
+            android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="24dp"
             android:layout_marginStart="24dp"

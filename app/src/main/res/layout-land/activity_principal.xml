@@ -10,14 +10,14 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:fitsSystemWindows="true">
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="40dp"
             android:layout_gravity="top"
             android:layout_marginTop="25dp"
             android:fitsSystemWindows="true"
@@ -47,7 +47,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="80dp"
             app:layout_anchor="@id/detail_toolbar"
             app:layout_anchorGravity="bottom"
             tools:layout_editor_absoluteX="11dp"
@@ -57,14 +57,17 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:text="@string/titdemandantes"
                 android:textColor="@color/txtperfiles"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/boton_perfiles"
+                app:layout_constraintBottom_toTopOf="@+id/boton_creardemandas"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,36 +75,42 @@
                 android:id="@+id/boton_perfiles"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
 
 
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:background="@color/colorcreardemandas"
                 android:clickable="true"
                 android:drawablePadding="50dp"
                 android:drawableStart="@drawable/ic_perfiles"
-
                 android:elevation="4dp"
                 android:onClick="lanzarServicios"
                 android:paddingStart="20dp"
+
                 android:text="@string/btnservicios"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/boton_creardemandas"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintEnd_toStartOf="@+id/boton_creardemandas"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
 
             <Button
                 android:id="@+id/boton_creardemandas"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
 
-                android:layout_marginTop="8dp"
+                android:layout_margin="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
                 android:background="@color/colorcreardemandas"
                 android:clickable="true"
                 android:drawablePadding="50dp"
@@ -114,33 +123,31 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/textView13"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/boton_perfiles" />
+                app:layout_constraintStart_toEndOf="@+id/boton_perfiles"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
             <TextView
                 android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_marginTop="8dp"
                 android:text="@string/titofertantes"
-
                 android:textColor="@color/txtdemandas"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/boton_demandas"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/boton_creardemandas" />
+                app:layout_constraintTop_toBottomOf="@+id/boton_perfiles" />
 
             <Button
                 android:id="@+id/boton_demandas"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
 
+                android:layout_margin="8dp"
                 android:background="@color/colorperfil"
                 android:clickable="true"
                 android:drawablePadding="50dp"
@@ -152,9 +159,9 @@
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_dark"
+
                 android:textSize="18sp"
-                app:layout_constraintBottom_toTopOf="@+id/boton_perfil"
-                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/boton_perfil"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -163,15 +170,12 @@
                 android:id="@+id/boton_perfil"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
 
-                android:layout_marginBottom="8dp"
-                android:layout_marginTop="4dp"
+                android:layout_margin="8dp"
                 android:background="@color/colorperfil"
                 android:clickable="true"
-
                 android:drawablePadding="50dp"
-
                 android:drawableStart="@drawable/ic_perfil"
                 android:elevation="4dp"
                 android:onClick="lanzarPerfil"
@@ -180,11 +184,11 @@
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/background_dark"
+
                 android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/boton_demandas" />
+                app:layout_constraintStart_toEndOf="@+id/boton_demandas"
+                app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -197,7 +201,3 @@
         app:adSize="SMART_BANNER"
         app:adUnitId="ca-app-pub-9780467258849720/2663199353" />
 </LinearLayout>
-
-
-
-
